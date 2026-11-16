@@ -1,0 +1,1403 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Glyzel Cabais: virtual assistant, executive assistant and social media manager from the Philippines. Inbox, calendar, social media, HR, operations, events and more.">
+<meta property="og:title" content="Glyzel Cabais · Virtual Assistant">
+<meta property="og:description" content="Less chaos. More done. Book a free call.">
+<meta property="og:image" content="img/hero.webp">
+<title>Glyzel Cabais Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: pinned navy hero where Glyzel's cut-out stands between her split name and scroll
+   pulls the scene apart; then motion-led chapters (parallax about, drawn timeline, tabbed
+   portfolio with live mock-ups and moving graphic reels) and a booking form. Navy leads, pink accents. */
+:root{
+  --navy:#1B2541; --blush:#F6C9D3; --rose:#E2849B;
+  --bg:#FBF7F8; --surface:#FFFFFF; --fg:#1B2541; --muted:#5B6380;
+  --accent:#B9506F; --accent-soft:#F8DCE3; --line:rgba(27,37,65,.12);
+  --hero:#1B2541; --hero-fg:#FBF1F4; --hero-muted:#B7BED6;
+  --m-bg:#FFFFFF; --m-fg:#1F2433; --m-mut:#6B7186; --m-line:#E8E4EC; --m-soft:#F6F4F8;
+  --c-red:#E5484D; --c-blue:#3B6EF5; --c-green:#2F9E6A; --c-amber:#D99A00; --c-pink:#D9718D; --c-violet:#7C5CFF;
+  --display:"Fraunces","Iowan Old Style",Georgia,serif;
+  --body:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1528; --surface:#18203A; --fg:#F3EEF2; --muted:#A7AEC6;
+  --accent:#F2A7BA; --accent-soft:rgba(246,201,211,.12); --line:rgba(243,238,242,.12);
+  --hero:#131B33; color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#0F1528; --surface:#18203A; --fg:#F3EEF2; --muted:#A7AEC6;
+  --accent:#F2A7BA; --accent-soft:rgba(246,201,211,.12); --line:rgba(243,238,242,.12);
+  --hero:#131B33; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--hero)}
+a{color:inherit}
+img{display:block}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1180px;margin-inline:auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.05;margin:0;text-wrap:balance;letter-spacing:-.015em}
+h2{font-size:clamp(36px,5vw,62px)}
+h2 em{font-style:italic;font-weight:400;color:var(--accent)}
+p{margin:0}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:transform .2s, background .2s, color .2s, border-color .2s, box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pink{background:var(--blush);color:#1B2541;box-shadow:0 10px 30px -10px rgba(226,132,155,.7)}
+.btn.pink:hover{background:var(--rose)}
+.btn.line{border-color:rgba(251,241,244,.35);color:var(--hero-fg);background:transparent}
+.btn.line:hover{border-color:var(--hero-fg)}
+.btn.solid{background:var(--fg);color:var(--bg)}
+
+/* header */
+.top{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);z-index:20;transition:background .3s, box-shadow .3s}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px}
+.top.solid{background:color-mix(in srgb, var(--hero) 92%, transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.logo{font-family:var(--display);font-size:21px;font-weight:600;color:var(--hero-fg);text-decoration:none}
+.logo i{color:var(--blush);font-weight:400}
+.top nav{display:flex;gap:28px;font-size:14px}
+.top nav a{color:var(--hero-muted);text-decoration:none}
+.top nav a:hover{color:var(--hero-fg)}
+.hire{padding:9px 18px;font-size:14px}
+.progress{position:fixed;left:0;top:env(safe-area-inset-top,0px);height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--rose),var(--blush));z-index:21}
+@media (max-width:860px){.top nav{display:none}}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;height:250vh;background:var(--hero);color:var(--hero-fg)}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;--u:1px}
+.glow{position:absolute;inset:-20%;background:radial-gradient(40% 40% at var(--gx,50%) 45%, rgba(246,201,211,.24), transparent 70%),radial-gradient(35% 35% at 20% 90%, rgba(59,110,245,.2), transparent 70%);pointer-events:none}
+.names{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;pointer-events:none;z-index:1}
+.names span{display:block;font-family:var(--display);font-weight:800;font-size:clamp(84px,16.5vw,260px);line-height:.84;letter-spacing:-.04em;will-change:transform}
+.names .n1{color:var(--blush)}
+.names .n2{color:transparent;-webkit-text-stroke:2px var(--blush)}
+.portrait{position:absolute;left:50%;top:50%;z-index:2;width:clamp(250px,27vw,400px);aspect-ratio:3/4;max-width:100%;transform:translate(-50%,-42%);will-change:transform}
+.arch{position:absolute;inset:14% 4% 0;border-radius:999px 999px 28px 28px;background:linear-gradient(170deg,var(--blush),var(--rose) 70%,#B9506F);box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+.ring{position:absolute;inset:calc(14% - 14px) calc(4% - 14px) -14px;border:1px solid rgba(246,201,211,.35);border-radius:999px 999px 36px 36px}
+.cut{position:absolute;left:50%;bottom:0;width:108%;height:auto;transform:translateX(-50%);border-radius:0 0 28px 28px;-webkit-mask-image:linear-gradient(#000 92%,transparent);mask-image:linear-gradient(#000 92%,transparent)}
+.role{position:absolute;left:50%;bottom:calc(6vh + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:3;text-align:center;width:min(92vw,760px);font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--hero-muted)}
+.role b{color:var(--blush)}
+.chip{position:absolute;left:calc(50% + var(--x) * var(--u));top:calc(50% + var(--y) * var(--u));z-index:4;will-change:transform,opacity}
+.chip > div{display:flex;align-items:center;gap:10px;padding:10px 14px 10px 10px;border-radius:14px;background:rgba(255,255,255,.96);color:#1F2433;box-shadow:0 18px 40px -18px rgba(0,0,0,.6);font-size:13px;font-weight:600;line-height:1.25;white-space:nowrap;animation:bob 6s ease-in-out infinite;animation-delay:var(--d,0s)}
+.chip small{display:block;color:#6B7186;font-size:11px;font-weight:500}
+.chip .ic{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex:none;color:#fff}
+.chip svg{width:16px;height:16px}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.intro{position:absolute;z-index:5;left:52%;top:50%;transform:translateY(-50%);width:min(560px,44vw);display:flex;flex-direction:column;gap:20px;opacity:0;pointer-events:none}
+.intro.live{pointer-events:auto}
+.intro .eyebrow{color:var(--blush)}
+.intro h1{font-size:clamp(46px,6vw,88px);font-weight:800;line-height:.95}
+.intro h1 em{font-style:italic;font-weight:400;color:var(--blush)}
+.rot{font-size:clamp(22px,2.3vw,30px);font-weight:600;color:var(--hero-fg);display:flex;flex-wrap:wrap;gap:.3em;align-items:baseline}
+.rot .slot{display:inline-block;position:relative;height:1.35em;overflow:hidden;vertical-align:bottom;background:var(--blush);border-radius:8px;transition:width .4s cubic-bezier(.2,.8,.2,1)}
+.rot .slot span{display:inline-block;color:#1B2541;padding:0 .35em;font-weight:800;line-height:1.35;white-space:nowrap;transition:transform .3s cubic-bezier(.2,.8,.2,1),opacity .3s}
+.rot .slot.swap span{transform:translateY(-100%);opacity:0}
+.rot .slot.enter span{transform:translateY(100%);opacity:0;transition:none}
+.intro .row{display:flex;gap:12px;flex-wrap:wrap}
+.hint{position:absolute;right:max(24px, env(safe-area-inset-right, 0px));bottom:calc(6vh + env(safe-area-inset-bottom,0px));z-index:3;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--hero-muted);display:flex;align-items:center;gap:10px}
+.hint i{width:1px;height:40px;background:linear-gradient(var(--blush),transparent);display:block}
+@media (max-width:860px){
+  .stage{--u:.46px}
+  .chip.opt{display:none}
+  .chip.rt{left:auto;right:max(10px, env(safe-area-inset-right, 0px))}
+  .chip:not(.rt){left:max(10px, env(safe-area-inset-left, 0px))}
+  .chip > div{font-size:12px;padding:8px 12px 8px 8px}
+  .chip .ic{width:26px;height:26px}
+  .portrait{width:min(62vw,300px)}
+  .intro{left:max(16px, env(safe-area-inset-left, 0px));right:max(16px, env(safe-area-inset-right, 0px));width:auto;top:auto;bottom:calc(5vh + env(safe-area-inset-bottom,0px));transform:none;gap:14px}
+  .intro h1{font-size:clamp(40px,12vw,56px)}
+  .rot{font-size:20px}
+  .hint{display:none}
+  .role{font-size:11px;letter-spacing:.14em}
+}
+.hero.static{height:auto}
+.hero.static .stage{position:relative;height:auto;min-height:100svh}
+
+/* ---------- shared section bits ---------- */
+section.block{padding-block:clamp(84px,11vw,140px);position:relative}
+.head{display:flex;flex-direction:column;gap:14px;margin-bottom:48px;max-width:760px}
+.head p{color:var(--muted);font-size:17px;max-width:62ch}
+.rv{transition:opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1), filter .9s;transition-delay:calc(var(--i,0) * 90ms)}
+.pending .rv{opacity:0;transform:translateY(34px);filter:blur(6px)}
+
+/* ---------- ABOUT ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center}
+.about-grid > *{min-width:0}
+.collage{position:relative;aspect-ratio:4/5;max-width:520px;width:100%}
+.collage .main{position:absolute;inset:6% 14% 0 0;border-radius:200px 200px 24px 24px;overflow:hidden;background:var(--accent-soft)}
+.collage .main img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.collage .sm{position:absolute;width:38%;aspect-ratio:3/4;border-radius:18px;overflow:hidden;border:6px solid var(--bg);box-shadow:0 30px 60px -30px rgba(27,37,65,.5);will-change:transform}
+.collage .sm img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.collage .s1{right:0;top:0}
+.collage .s2{right:4%;bottom:-6%}
+.badge5{position:absolute;left:-14px;bottom:12%;background:var(--navy);color:#FBF1F4;border-radius:20px;padding:16px 20px;box-shadow:0 20px 40px -20px rgba(0,0,0,.5);will-change:transform}
+.badge5 b{display:block;white-space:nowrap;font-family:var(--display);font-size:44px;line-height:1;color:var(--blush)}
+.badge5 > span{display:block;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.spin{position:absolute;left:-8%;top:-4%;width:120px;height:120px;animation:spin 16s linear infinite}
+.spin text{font:800 10.5px var(--body);letter-spacing:.32em;fill:var(--accent);text-transform:uppercase}
+@keyframes spin{to{transform:rotate(360deg)}}
+.big-line{font-family:var(--display);font-size:clamp(30px,3.4vw,46px);line-height:1.12;font-weight:400}
+.big-line em{color:var(--accent)}
+.about-copy{display:flex;flex-direction:column;gap:18px;color:var(--muted);font-size:16.5px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:6px}
+.stats div{border-top:2px solid var(--rose);padding-top:12px}
+.stats strong{display:block;font-family:var(--display);font-size:clamp(44px,5vw,64px);font-weight:600;color:var(--fg);line-height:1;font-variant-numeric:tabular-nums}
+.stats > div > span{font-size:13px;display:block;margin-top:6px}
+.stats strong span{font:inherit;color:inherit}
+.marquee{margin-top:90px;border-block:1px solid var(--line);overflow:hidden;padding-block:18px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marquee .track{display:flex;gap:44px;width:max-content;animation:mq 45s linear infinite}
+.marquee span{font-family:var(--display);font-size:clamp(26px,3vw,40px);font-weight:600;white-space:nowrap;display:flex;align-items:center;gap:44px}
+.marquee span::after{content:"✦";color:var(--rose);font-size:.6em}
+@keyframes mq{to{transform:translateX(-50%)}}
+.toolgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.tg{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px;transition:transform .3s, box-shadow .3s}
+.tg:hover{transform:translateY(-4px);box-shadow:0 20px 40px -24px rgba(27,37,65,.35)}
+.tg h4{margin:0 0 12px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.tg ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:7px}
+.tg li{font-size:13.5px;font-weight:600;padding:5px 11px;border-radius:999px;background:var(--accent-soft)}
+.help{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.hc{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:12px;overflow:hidden;transition:transform .35s, box-shadow .35s, opacity .9s, filter .9s}
+.hc:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(27,37,65,.4)}
+.hc::after{content:"";position:absolute;right:-40px;top:-40px;width:120px;height:120px;border-radius:50%;background:var(--accent-soft);transition:transform .5s}
+.hc:hover::after{transform:scale(1.6)}
+.hc .hn{font-family:var(--display);font-size:15px;font-weight:800;color:var(--accent);position:relative;z-index:1}
+.hc h3{font-size:22px;position:relative;z-index:1}
+.hc ul{margin:0;padding-left:18px;color:var(--muted);font-size:14.5px;display:flex;flex-direction:column;gap:4px}
+.hc .get{margin-top:auto;font-weight:700;font-size:14px;color:var(--fg);border-top:1px dashed var(--line);padding-top:12px}
+@media (max-width:900px){.help{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.help{grid-template-columns:1fr}}
+.fb .cover{aspect-ratio:820/312;background:#ddd center/cover;position:relative}
+.fb .prow{display:flex;align-items:flex-end;gap:12px;padding:0 14px;margin-top:-34px;position:relative}
+.fb .ppic{width:84px;height:84px;border-radius:50%;border:4px solid #fff;background:#fff center/cover;flex:none;box-shadow:0 2px 6px rgba(0,0,0,.2);display:grid;place-items:center;overflow:hidden}
+.fb .pname{padding-bottom:6px}
+.fb .pname b{display:block;font-size:17px}
+.fb .pbtn{display:flex;gap:6px;padding:12px 14px}
+.fb .pbtn span{flex:1;text-align:center;border-radius:8px;padding:7px;font-weight:700;background:var(--m-soft)}
+.fb .pbtn span:first-child{background:#0866FF;color:#fff}
+.fb .fbi{padding:0 14px 14px;font-size:12px;line-height:1.5;display:flex;flex-direction:column;gap:4px}
+.traits{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:16px}
+.traits div{background:var(--navy);color:#F3EEF2;border-radius:18px;padding:22px}
+.traits b{display:block;font-family:var(--display);font-size:20px;font-weight:600;margin-bottom:6px;color:var(--blush)}
+.traits p{font-size:14px;color:#C6CBE0}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr;gap:56px}.collage{max-width:420px;margin-inline:auto}.toolgrid{grid-template-columns:1fr 1fr}.traits{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.toolgrid,.traits{grid-template-columns:1fr}.stats strong{font-size:44px}.badge5{left:0}}
+
+/* ---------- EXPERIENCE ---------- */
+.exp{background:var(--accent-soft);overflow:hidden}
+.tl{position:relative;display:flex;flex-direction:column;gap:22px;list-style:none;margin:0;padding:0 0 0 48px}
+.tl::before{content:"";position:absolute;left:15px;top:0;bottom:0;width:2px;background:var(--line)}
+.tl .fill{position:absolute;left:15px;top:0;width:2px;height:100%;background:linear-gradient(var(--rose),var(--accent));transform-origin:top;transform:scaleY(var(--tp,0))}
+.job{position:relative;display:grid;grid-template-columns:150px 1fr;gap:28px;background:var(--surface);border-radius:20px;padding:26px 28px;border:1px solid var(--line);transition:opacity .8s, transform .8s cubic-bezier(.2,.7,.2,1)}
+.job::before{content:"";position:absolute;left:-41px;top:32px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--rose)}
+.job > *{min-width:0}
+.pending .job{opacity:0;transform:translateX(60px)}
+.job time{font-weight:800;font-size:14px;color:var(--accent);font-variant-numeric:tabular-nums}
+.job h3{font-size:24px}
+.job .co{color:var(--muted);font-size:14px;margin:4px 0 12px}
+.job ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px;display:flex;flex-direction:column;gap:6px}
+@media (max-width:700px){.job{grid-template-columns:1fr;gap:6px;padding:22px}.tl{padding-left:34px}.tl::before,.tl .fill{left:8px}.job::before{left:-33px}}
+
+/* ---------- PORTFOLIO ---------- */
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:10px;margin-bottom:28px;scrollbar-width:thin;position:sticky;top:calc(env(safe-area-inset-top,0px) + 64px);z-index:5;background:var(--bg);padding-top:10px}
+.tab{flex:none;padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);font:700 14px var(--body);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.tab:hover{transform:translateY(-2px)}
+.tab[aria-selected="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.niche-intro{color:var(--muted);margin-bottom:26px;max-width:72ch;font-size:16.5px}
+.panel-in{animation:pin .6s cubic-bezier(.2,.7,.2,1)}
+@keyframes pin{from{opacity:0;transform:translateY(20px)}}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media (max-width:820px){.grid{grid-template-columns:1fr}}
+.work{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:14px;display:flex;flex-direction:column;gap:16px;min-width:0;
+  transition:opacity .7s, transform .7s cubic-bezier(.2,.7,.2,1), box-shadow .3s;transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))}
+.work:hover{box-shadow:0 30px 60px -30px rgba(27,37,65,.4)}
+.work:not(.in){opacity:0;transform:translateY(40px) scale(.97)}
+.work > *{min-width:0;max-width:100%}
+.laptop .lid,.laptop .mock{min-width:0;max-width:100%}
+.work .txt{padding:2px 8px 8px;display:flex;flex-direction:column;gap:8px}
+.work h3{font-size:22px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tag-sample{font:800 10px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:4px 8px;border-radius:999px}
+.work p{color:var(--muted);font-size:14.5px}
+.used{display:flex;flex-wrap:wrap;gap:6px}
+.used span{font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid var(--line)}
+.wide{grid-column:1/-1}
+.sub-h{font-family:var(--display);font-size:26px;margin:36px 0 16px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.sub-h small{font:600 14px var(--body);color:var(--muted)}
+.sub-h:first-child{margin-top:0}
+
+/* mock kit */
+.mock{background:var(--m-bg);color:var(--m-fg);border-radius:14px;border:1px solid var(--m-line);overflow:hidden;font-size:12px;line-height:1.4}
+.mock .bar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:var(--m-soft);border-bottom:1px solid var(--m-line);color:var(--m-mut);font-weight:700;font-size:11px}
+.mock .bar i{width:8px;height:8px;border-radius:50%;background:#E3DDE6;display:block}
+.mock .bar i:first-child{background:#F3A6A6}.mock .bar i:nth-child(2){background:#F5D58C}.mock .bar i:nth-child(3){background:#A8DDB5}
+.mock .bar span{margin-left:8px}
+.mock .bar em{margin-left:auto;font-style:normal;font-weight:600}
+.mb{padding:12px}
+.mut{color:var(--m-mut)}
+.lbl{display:inline-block;padding:1px 7px;border-radius:5px;font-size:10px;font-weight:700;color:#fff}
+.r{background:var(--c-red)}.b{background:var(--c-blue)}.g{background:var(--c-green)}.a{background:var(--c-amber)}.p{background:var(--c-pink)}.v{background:var(--c-violet)}
+.scroll-x{overflow-x:auto}
+.t{width:100%;border-collapse:collapse;font-size:11.5px}
+.t th{text-align:left;font-weight:700;color:var(--m-mut);padding:6px 8px;border-bottom:1px solid var(--m-line);white-space:nowrap}
+.t td{padding:6px 8px;border-bottom:1px solid var(--m-line);white-space:nowrap;font-variant-numeric:tabular-nums}
+.t tr:last-child td{border-bottom:0}
+.st{display:inline-block;padding:1px 8px;border-radius:999px;font-size:10.5px;font-weight:700}
+.st.done{background:#DDF3E6;color:#1E7A4E}.st.prog{background:#FFF1CC;color:#8A6200}.st.todo{background:#E8EEFF;color:#2D55C8}.st.late{background:#FDE2E3;color:#B4262B}
+/* animated internals: start state until card is seen */
+.work .t tr,.work .mail-row,.work .card,.work .row,.work .tx > div,.work .check > div,.work .cap,.work .msg{transition:opacity .5s, transform .5s cubic-bezier(.2,.7,.2,1)}
+.work:not(.in) .t tr,.work:not(.in) .mail-row,.work:not(.in) .card,.work:not(.in) .doc .row,.work:not(.in) .tx > div,.work:not(.in) .check > div,.work:not(.in) .cap,.work:not(.in) .msg{opacity:0;transform:translateX(-14px)}
+.work .t tr:nth-child(2),.work .mail-row:nth-child(2),.work .card:nth-child(3),.work .doc .row:nth-child(3),.work .check > div:nth-child(3),.work .tx > div:nth-child(2),.work .cap:nth-child(3),.work .msg:nth-child(2){transition-delay:.12s}
+.work .t tr:nth-child(3),.work .mail-row:nth-child(3),.work .doc .row:nth-child(4),.work .check > div:nth-child(4),.work .tx > div:nth-child(3),.work .cap:nth-child(4),.work .msg:nth-child(3){transition-delay:.24s}
+.work .t tr:nth-child(4),.work .mail-row:nth-child(4),.work .doc .row:nth-child(5),.work .check > div:nth-child(5),.work .tx > div:nth-child(4),.work .msg:nth-child(4){transition-delay:.36s}
+.work .t tr:nth-child(n+5),.work .mail-row:nth-child(n+5),.work .doc .row:nth-child(n+6),.work .check > div:nth-child(n+6){transition-delay:.48s}
+.meter{height:6px;border-radius:9px;background:var(--m-line);overflow:hidden;display:block}
+.meter i{display:block;height:100%;background:var(--c-green);border-radius:9px;transform-origin:left;transition:transform 1.2s cubic-bezier(.2,.7,.2,1) .2s}
+.work:not(.in) .meter i{transform:scaleX(0)}
+.bars{display:flex;align-items:flex-end;gap:8px;height:90px;padding:0 12px 4px}
+.bars div{flex:1;background:var(--c-blue);border-radius:4px 4px 0 0;opacity:.85;transform-origin:bottom;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.bars div:nth-child(2){transition-delay:.06s}.bars div:nth-child(3){transition-delay:.12s}.bars div:nth-child(4){transition-delay:.18s}.bars div:nth-child(5){transition-delay:.24s}.bars div:nth-child(6){transition-delay:.3s}.bars div:nth-child(7){transition-delay:.36s}
+.work:not(.in) .bars div{transform:scaleY(0)}
+.bars div.hi{background:var(--c-pink);opacity:1}
+.bars-x{display:flex;gap:8px;padding:0 12px 12px;color:var(--m-mut);font-size:10px}
+.bars-x span{flex:1;text-align:center}
+.draw path.ln{stroke-dasharray:600;stroke-dashoffset:0;transition:stroke-dashoffset 2s cubic-bezier(.2,.7,.2,1) .2s}
+.work:not(.in) .draw path.ln{stroke-dashoffset:600}
+.draw .ar{transition:opacity 1s 1s}
+.work:not(.in) .draw .ar{opacity:0}
+/* inbox */
+.inbox{display:grid;grid-template-columns:120px 1fr}
+.inbox aside{border-right:1px solid var(--m-line);padding:10px;display:flex;flex-direction:column;gap:6px;font-size:11px}
+.inbox aside span{display:flex;align-items:center;gap:6px}
+.inbox aside span i{width:8px;height:8px;border-radius:2px;display:block}
+.mail-row{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;padding:8px 10px;border-bottom:1px solid var(--m-line)}
+.mail-row:last-child{border-bottom:0}
+.mail-row .who{font-weight:700}
+.mail-row .sub{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.star{color:var(--c-amber)}
+@media (max-width:480px){.inbox{grid-template-columns:1fr}.inbox aside{flex-direction:row;flex-wrap:wrap;border-right:0;border-bottom:1px solid var(--m-line)}}
+/* calendar */
+.cal{display:grid;grid-template-columns:34px repeat(5,1fr);font-size:10.5px}
+.cal .h{padding:6px 4px;text-align:center;font-weight:700;color:var(--m-mut);border-bottom:1px solid var(--m-line)}
+.cal .tm{color:var(--m-mut);font-size:9.5px;padding:2px 4px;text-align:right;height:30px;border-top:1px solid var(--m-line)}
+.cal .col{position:relative;border-left:1px solid var(--m-line);grid-row:2 / span 9;background:repeating-linear-gradient(to bottom, transparent 0 29px, var(--m-line) 29px 30px)}
+.ev{position:absolute;left:3px;right:3px;border-radius:5px;padding:3px 5px;color:#fff;font-weight:700;font-size:9.5px;line-height:1.2;overflow:hidden;transition:transform .6s cubic-bezier(.2,.7,.2,1), opacity .6s}
+.work:not(.in) .ev{opacity:0;transform:translateY(-12px)}
+.cal .col:nth-child(9) .ev{transition-delay:.1s}.cal .col:nth-child(10) .ev{transition-delay:.2s}.cal .col:nth-child(11) .ev{transition-delay:.3s}.cal .col:nth-child(12) .ev{transition-delay:.4s}
+/* boards */
+.board{display:grid;grid-template-columns:repeat(var(--cols,3),minmax(120px,1fr));gap:10px;padding:12px;background:var(--m-soft)}
+.board h4{margin:0 0 8px;font-size:11px;color:var(--m-mut);display:flex;justify-content:space-between}
+.card{background:var(--m-bg);border:1px solid var(--m-line);border-radius:8px;padding:8px;margin-bottom:8px;display:flex;flex-direction:column;gap:5px}
+.card .who{display:flex;justify-content:space-between;align-items:center;color:var(--m-mut);font-size:10.5px}
+.av{width:18px;height:18px;border-radius:50%;background:var(--c-pink);color:#fff;font-size:9px;display:grid;place-items:center;font-weight:700}
+/* doc */
+.doc{padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.doc h5{margin:0;font-family:var(--display);font-size:17px;font-weight:600}
+.doc .row{display:grid;grid-template-columns:76px 1fr;gap:10px;padding:6px 0;border-top:1px dashed var(--m-line)}
+.doc .row b{color:var(--c-pink);font-size:11px}
+.tree{padding:12px 14px;font-size:12px;display:flex;flex-direction:column;gap:5px}
+.tree div{display:flex;align-items:center;gap:7px}
+.tree svg{width:14px;height:14px;flex:none}
+/* social */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:12px}
+.kpi{background:var(--m-soft);border-radius:10px;padding:8px}
+.kpi b{display:block;font-size:16px;font-variant-numeric:tabular-nums}
+.kpi .up{color:var(--c-green);font-weight:700;font-size:10px}
+.kpi .dn{color:var(--c-red);font-weight:700;font-size:10px}
+@media (max-width:480px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.cap{padding:12px;display:flex;flex-direction:column;gap:6px;border-bottom:1px solid var(--m-line)}
+.cap:last-child{border-bottom:0}
+.cap .hook{font-weight:700}
+.cap .tags{color:var(--c-blue)}
+.chat{padding:12px;display:flex;flex-direction:column;gap:8px}
+.msg{max-width:85%;padding:8px 11px;border-radius:12px;background:var(--m-soft)}
+.msg.me{align-self:flex-end;background:#E8EEFF}
+.msg small{display:block;color:var(--m-mut);font-size:10px;margin-bottom:2px}
+.check{padding:12px;display:flex;flex-direction:column;gap:7px}
+.check div{display:flex;gap:8px;align-items:center}
+.box{width:14px;height:14px;border-radius:4px;border:1.5px solid var(--m-line);flex:none;display:grid;place-items:center}
+.box.on{background:var(--c-green);border-color:var(--c-green)}
+.box.on::after{content:"";width:6px;height:3px;border:2px solid #fff;border-top:0;border-right:0;transform:rotate(-45deg) translate(1px,-1px)}
+.check .done-t{color:var(--m-mut);text-decoration:line-through}
+.edit{padding:14px 16px;font-size:12.5px;line-height:1.7}
+.edit del{color:var(--c-red);text-decoration-thickness:1.5px}
+.edit ins{color:var(--c-green);text-decoration:none;background:#E3F5EA;border-radius:3px;padding:0 2px}
+.edit .note{display:block;margin-top:10px;padding:8px 10px;border-left:3px solid var(--c-pink);background:var(--m-soft);font-size:11px;color:var(--m-mut)}
+.tx{padding:12px 14px;display:flex;flex-direction:column;gap:9px;font-size:12px}
+.tx > div{display:grid;grid-template-columns:58px 1fr;gap:10px}
+.tx time{font-variant-numeric:tabular-nums;color:var(--m-mut);font-size:11px}
+.tx b{color:var(--c-blue)}
+.tx b.s2{color:var(--c-pink)}
+.cmp{display:grid;grid-template-columns:1fr 1fr}
+.cmp > div{padding:12px 14px;font-size:12px}
+.cmp > div + div{border-left:1px solid var(--m-line)}
+.cmp h6{margin:0 0 6px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--m-mut)}
+@media (max-width:480px){.cmp{grid-template-columns:1fr}.cmp > div + div{border-left:0;border-top:1px solid var(--m-line)}}
+.skill{display:grid;grid-template-columns:110px 1fr 40px;gap:10px;align-items:center;padding:5px 12px}
+.skill .meter i{background:var(--c-pink)}
+.seats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;padding:16px;background:var(--m-soft)}
+.seat{aspect-ratio:1;border-radius:50%;background:var(--m-bg);border:2px solid var(--m-line);display:grid;place-items:center;font-weight:800;font-size:11px;position:relative;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.seat.vip{border-color:var(--c-amber);background:#FFF6DD}
+.seat.fam{border-color:var(--c-pink);background:#FCE8EE}
+.work:not(.in) .seat{transform:scale(0)}
+.stage-bar{grid-column:1/-1;background:var(--m-fg);color:#fff;text-align:center;border-radius:8px;padding:6px;font-weight:700;letter-spacing:.2em;font-size:10px}
+
+/* instagram profile mock */
+.ig{max-width:420px;margin-inline:auto}
+.ig .phd{display:flex;gap:16px;align-items:center;padding:14px}
+.ig .pp{width:74px;height:74px;border-radius:50%;padding:3px;background:conic-gradient(#F9CE34,#EE2A7B,#6228D7,#F9CE34);flex:none}
+.ig .pp div{width:100%;height:100%;border-radius:50%;border:3px solid #fff;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:22px;color:#fff;background:#5B3A2E}
+.ig .nums{display:flex;gap:18px;text-align:center;flex:1;justify-content:space-around}
+.ig .nums b{display:block;font-size:15px}
+.ig .bio{padding:0 14px 12px;font-size:12px;line-height:1.45}
+.ig .bio a{color:#00376B;font-weight:700;text-decoration:none}
+.ig .btns{display:flex;gap:6px;padding:0 14px 12px}
+.ig .btns span{flex:1;text-align:center;background:var(--m-soft);border-radius:8px;padding:6px;font-weight:700}
+.ig .btns span:first-child{background:#0095F6;color:#fff}
+.ig .hl{display:flex;gap:14px;padding:0 14px 12px;overflow:hidden}
+.ig .hl div{text-align:center;font-size:10px;width:56px;flex:none}
+.ig .hl i{display:block;width:52px;height:52px;border-radius:50%;border:2px solid var(--m-line);margin:0 auto 4px;background-size:cover;background-position:center}
+.ig .gridp{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.ig .gridp div{aspect-ratio:4/5;background:#ddd center/cover}
+
+/* graphics reels */
+.reel:not(:has(button)){display:none}
+.reel{overflow:hidden;margin-inline:calc(-1 * max(16px, env(safe-area-inset-left, 0px)));padding-block:6px}
+.reel .track{display:flex;gap:14px;width:max-content;will-change:transform}
+.reel button{all:unset;cursor:zoom-in;flex:none;border-radius:16px;overflow:hidden;box-shadow:0 20px 40px -24px rgba(0,0,0,.5);transition:transform .3s}
+.reel button:hover{transform:translateY(-6px) scale(1.02)}
+.reel button:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+.reel img{height:300px;width:auto;object-fit:cover}
+.reel.r-wide img{height:220px}
+@media (max-width:600px){.reel img{height:230px}.reel.r-wide img{height:160px}}
+.gal-note{color:var(--muted);font-size:13px;margin-top:10px}
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1100px);max-height:92vh}
+dialog.lb::backdrop{background:rgba(10,14,28,.85);backdrop-filter:blur(4px)}
+dialog.lb img{max-width:100%;max-height:84vh;border-radius:14px;margin-inline:auto}
+dialog.lb p{color:#F3EEF2;text-align:center;margin-top:10px;font-size:14px}
+dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));right:calc(16px + env(safe-area-inset-right,0px));background:#fff;color:#1B2541;border:0;border-radius:999px;padding:10px 16px;font:700 14px var(--body);cursor:pointer}
+
+
+/* ---- device mockups ---- */
+.laptop{perspective:1600px;padding-top:4px}
+.laptop .lid{background:#16181D;border-radius:16px 16px 4px 4px;padding:12px 12px 14px;position:relative;transform-origin:bottom center;transition:transform 1.1s cubic-bezier(.2,.8,.2,1),opacity .6s;box-shadow:0 30px 50px -30px rgba(0,0,0,.6)}
+.laptop .lid::before{content:"";position:absolute;top:4px;left:50%;width:5px;height:5px;border-radius:50%;background:#3A3F4A;transform:translateX(-50%)}
+.laptop .base{height:14px;margin:0 -4%;background:linear-gradient(#D9DCE2,#A9AEB8);border-radius:0 0 18px 18px;position:relative;box-shadow:0 18px 26px -14px rgba(0,0,0,.45)}
+.laptop .base::before{content:"";position:absolute;left:50%;top:0;width:18%;height:6px;border-radius:0 0 8px 8px;background:#9BA0AA;transform:translateX(-50%)}
+.work:not(.in) .laptop .lid{transform:rotateX(78deg);opacity:.3}
+.laptop .mock{border-radius:6px;border:0}
+.phone{width:min(330px,100%);margin-inline:auto;background:#111;border-radius:42px;padding:12px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6);transition:transform 1s cubic-bezier(.2,.8,.2,1),opacity .8s}
+.phone .mock{border-radius:32px;border:0;position:relative}
+.phone .mock::before{content:"";position:absolute;top:8px;left:50%;width:90px;height:24px;border-radius:20px;background:#111;transform:translateX(-50%);z-index:3}
+.phone .notchpad{height:38px;background:var(--m-bg);display:flex;align-items:center;justify-content:space-between;padding:0 22px;font-weight:700;font-size:11px}
+.work:not(.in) .phone{transform:translateY(60px) rotate(-6deg);opacity:0}
+/* browser chrome + app header */
+.chrome{display:flex;align-items:center;gap:8px;padding:7px 10px;background:#ECEEF1;border-bottom:1px solid #DADDE2}
+.chrome .dots{display:flex;gap:5px}.chrome .dots i{width:9px;height:9px;border-radius:50%;display:block}
+.chrome .dots i:nth-child(1){background:#FF5F57}.chrome .dots i:nth-child(2){background:#FEBC2E}.chrome .dots i:nth-child(3){background:#28C840}
+.chrome .url{flex:1;min-width:0;background:#fff;border-radius:999px;padding:4px 12px;font-size:10.5px;color:#5F6368;display:flex;align-items:center;gap:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chrome .url svg{width:10px;height:10px;flex:none}
+.apphd{display:flex;align-items:center;gap:9px;padding:8px 12px;border-bottom:1px solid var(--m-line);font-size:11.5px;font-weight:700;background:var(--app-bg,#fff);color:var(--app-fg,#1F2433)}
+.apphd .ab{width:22px;height:22px;border-radius:6px;background:var(--app,#3B6EF5);color:#fff;display:grid;place-items:center;font:800 11px var(--body);flex:none}
+.apphd .an{font-weight:800}
+.apphd .at{color:var(--app-mut,#6B7186);font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.apphd .ax{margin-left:auto;font-weight:600;color:var(--app-mut,#6B7186);white-space:nowrap}
+.mock.app-sheets .t td,.mock.app-sheets .t th,.mock.app-excel .t td,.mock.app-excel .t th{border:1px solid #E2E3E3}
+.mock.app-sheets .t th,.mock.app-excel .t th{background:#F8F9FA}
+.mock.app-trello .board{background:linear-gradient(135deg,#0079BF,#5067C5)}
+.mock.app-trello .board h4{color:#fff}
+.mock.app-clickup .board{background:#F7F5FF}
+/* word reveal */
+.wd{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em}
+.wd > span{display:inline-block;transition:transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--w,0) * 60ms)}
+.pending .wd > span,.wd-wait .wd > span{transform:translateY(110%)}
+/* indeed + linkedin */
+.ind{font-family:Arial,Helvetica,sans-serif;color:#2D2D2D;background:#fff}
+.ind .itop{display:flex;align-items:center;gap:18px;padding:12px 18px;border-bottom:1px solid #E4E2E0}
+.ind .logo{font:italic 800 22px Georgia,serif;color:#2557A7;letter-spacing:-.02em}
+.ind .search{flex:1;display:flex;gap:6px}.ind .search span{flex:1;border:1px solid #949494;border-radius:8px;padding:6px 10px;font-size:11px;color:#595959}
+.ind .search b{background:#2557A7;color:#fff;border-radius:8px;padding:6px 14px;font-size:11px}
+.ind .body{display:grid;grid-template-columns:.9fr 1.4fr;gap:0;min-height:300px}
+.ind .list{border-right:1px solid #E4E2E0;padding:10px;display:flex;flex-direction:column;gap:8px;background:#FAF9F8}
+.ind .jc{background:#fff;border:1px solid #E4E2E0;border-radius:10px;padding:10px;font-size:11px;line-height:1.4}
+.ind .jc.on{border:2px solid #2557A7}
+.ind .jc b{display:block;font-size:12.5px;color:#2D2D2D}
+.ind .tagp{display:inline-block;background:#F3F2F1;border-radius:4px;padding:2px 6px;margin:3px 3px 0 0;font-weight:700;font-size:10px;color:#595959}
+.ind .det{padding:16px 18px;font-size:11.5px;line-height:1.55;display:flex;flex-direction:column;gap:8px}
+.ind .det h5{margin:0;font:700 19px Arial,sans-serif}
+.ind .apply{display:flex;gap:8px;align-items:center}
+.ind .apply b{background:#2557A7;color:#fff;border-radius:8px;padding:9px 18px;font-size:12px}
+.ind .apply i{font-style:normal;border:1px solid #949494;border-radius:8px;padding:8px 10px}
+.ind .det ul{margin:0;padding-left:16px}
+.li{font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#F4F2EE;color:#191919}
+.li .ltop{display:flex;align-items:center;gap:14px;padding:8px 14px;background:#fff;border-bottom:1px solid #E0DFDC}
+.li .logo{width:26px;height:26px;border-radius:4px;background:#0A66C2;color:#fff;display:grid;place-items:center;font:800 15px Arial}
+.li .srch{background:#EDF3F8;border-radius:4px;padding:6px 10px;font-size:11px;color:#666;width:180px}
+.li .nav{margin-left:auto;display:flex;gap:16px;font-size:10px;color:#666}
+.li .card{background:#fff;margin:12px;border-radius:10px;border:1px solid #E0DFDC;overflow:hidden}
+.li .cov{height:64px;background:linear-gradient(120deg,#1B2541,#E2849B)}
+.li .cb{padding:0 16px 14px;display:flex;flex-direction:column;gap:6px;font-size:11.5px;line-height:1.5}
+.li .clogo{width:56px;height:56px;border-radius:8px;background:#fff;border:3px solid #fff;margin-top:-28px;box-shadow:0 1px 4px rgba(0,0,0,.2);display:grid;place-items:center;font:800 18px Georgia;color:#1B2541}
+.li .cb h5{margin:0;font-size:18px;font-weight:700}
+.li .btns{display:flex;gap:8px}
+.li .btns b{background:#0A66C2;color:#fff;border-radius:999px;padding:7px 16px;font-size:12px}
+.li .btns i{font-style:normal;border:1.5px solid #0A66C2;color:#0A66C2;border-radius:999px;padding:6px 14px;font-weight:700}
+.li .chips{display:flex;gap:6px;flex-wrap:wrap}.li .chips span{background:#E8F3EC;color:#1F6E43;border-radius:999px;padding:2px 9px;font-weight:600;font-size:10.5px}
+@media (max-width:600px){.ind .body{grid-template-columns:1fr}.ind .list{display:none}.li .nav,.li .srch{display:none}}
+
+/* ---------- CONTACT ---------- */
+.contact{background:var(--hero);color:var(--hero-fg)}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.contact-grid > *{min-width:0}
+.contact h2{font-size:clamp(40px,6vw,76px);color:var(--hero-fg)}
+.contact h2 em{color:var(--blush)}
+.contact .lead{color:var(--hero-muted);margin-top:16px;font-size:17px}
+.cphoto{margin-top:30px;border-radius:200px 200px 24px 24px;overflow:hidden;aspect-ratio:4/5;max-width:340px;background:#24305A}
+.cphoto img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.mailrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:22px}
+.mailrow code{font-family:var(--display);font-size:22px;user-select:all;word-break:break-all}
+form.book{background:#FBF7F8;color:#1B2541;border-radius:26px;padding:clamp(20px,3vw,34px);display:grid;grid-template-columns:1fr 1fr;gap:16px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+form.book h3{grid-column:1/-1;font-size:28px}
+form.book .full{grid-column:1/-1}
+form.book label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:700}
+form.book input,form.book select,form.book textarea{font:500 15px var(--body);padding:12px 14px;border-radius:12px;border:1.5px solid #DCD5DF;background:#fff;color:#1B2541;width:100%}
+form.book textarea{min-height:110px;resize:vertical}
+form.book input:focus,form.book select:focus,form.book textarea:focus{outline:none;border-color:var(--rose);box-shadow:0 0 0 4px rgba(226,132,155,.2)}
+.svc{display:flex;flex-wrap:wrap;gap:8px}
+.svc label{position:relative}
+form.book .svc input{position:absolute;left:0;top:0;width:1px;height:1px;padding:0;opacity:0;pointer-events:none}
+.svc span{display:inline-block;padding:7px 13px;border-radius:999px;border:1.5px solid #DCD5DF;font-size:13px;font-weight:600;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.svc input:checked + span{background:#1B2541;border-color:#1B2541;color:#fff}
+.svc input:focus-visible + span{outline:2px solid var(--rose);outline-offset:2px}
+.slots{display:flex;flex-wrap:wrap;gap:8px}
+form.book .err{color:#B4262B;font-size:13px;font-weight:600;grid-column:1/-1}
+form.book .submit{grid-column:1/-1;justify-self:start;background:#1B2541;color:#fff;border:0}
+.done{grid-column:1/-1;background:#fff;border:1.5px solid #DCD5DF;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.done pre{white-space:pre-wrap;font:500 13px/1.5 var(--body);background:#F6F4F8;border-radius:10px;padding:12px;margin:0;max-height:220px;overflow:auto}
+.done .row{display:flex;gap:10px;flex-wrap:wrap}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr}.cphoto{display:none}}
+@media (max-width:560px){form.book{grid-template-columns:1fr}}
+.foot{border-top:1px solid rgba(251,241,244,.12);margin-top:80px;padding-top:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--hero-muted)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .rv,.job,.work{transition:none}
+  .pending .rv,.pending .job{opacity:1;transform:none;filter:none}
+  .work:not(.in){opacity:1;transform:none}
+  .chip > div,.spin,.marquee .track{animation:none}
+}
+</style>
+<style>body{margin:0}</style>
+</head>
+<body>
+
+
+<div class="progress" id="progress"></div>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#home">Glyzel <i>Cabais</i></a>
+    <nav aria-label="Sections"><a href="#about">About</a><a href="#experience">Experience</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></nav>
+    <a class="btn pink hire" href="#contact">Book a call</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<div class="hero" id="home">
+  <div class="stage" id="stage">
+    <div class="glow" id="glow"></div>
+    <div class="names" aria-hidden="true"><span class="n1" id="n1">GLYZEL</span><span class="n2" id="n2">CABAIS</span></div>
+    <div class="portrait" id="portrait">
+      <div class="ring"></div><div class="arch"></div>
+      <img class="cut" src="img/hero.webp" alt="Glyzel Cabais in a black blazer" width="892" height="1200">
+    </div>
+
+    <div class="chip" style="--x:-400;--y:-200;--d:0s" data-dx="-1.1" data-dy="-.7" data-r="-14"><div><span class="ic" style="background:var(--c-red)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span>Inbox cleared<small>0 unread · 4 flagged</small></span></div></div>
+    <div class="chip rt" style="--x:240;--y:-240;--d:-1.5s" data-dx="1" data-dy="-.9" data-r="12"><div><span class="ic" style="background:var(--c-blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><span>Client call booked<small>Thu, 3:00 PM</small></span></div></div>
+    <div class="chip opt rt" style="--x:270;--y:-30;--d:-3s" data-dx="1.2" data-dy="0" data-r="18"><div><span class="ic" style="background:var(--c-pink)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span>Reel scheduled<small>Instagram · 9:00 AM</small></span></div></div>
+    <div class="chip opt" style="--x:-450;--y:10;--d:-2s" data-dx="-1.2" data-dy=".1" data-r="-10"><div><span class="ic" style="background:var(--c-green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><span>Followers +2,400<small>this month</small></span></div></div>
+    <div class="chip" style="--x:-380;--y:170;--d:-4s" data-dx="-1" data-dy=".9" data-r="10"><div><span class="ic" style="background:var(--c-violet)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg></span><span>Event confirmed<small>120 guests · Sat</small></span></div></div>
+    <div class="chip rt" style="--x:240;--y:170;--d:-2.6s" data-dx="1.1" data-dy=".9" data-r="-12"><div><span class="ic" style="background:var(--c-amber)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h10M4 17h7"/></svg></span><span>Payroll done<small>18 staff · on time</small></span></div></div>
+
+    <p class="role" id="role">Virtual Assistant <b>·</b> Executive Assistant <b>·</b> Social Media Manager</p>
+
+    <div class="intro" id="intro">
+      <span class="eyebrow">Hi, I'm Glyzel, your virtual assistant</span>
+      <h1>Less chaos. <em>More done.</em></h1>
+      <p class="rot">I handle your <span class="slot" id="slot"><span>inbox</span></span></p>
+      <div class="row"><a class="btn pink" href="#contact">Book a free call</a><a class="btn line" href="#portfolio">See my work</a></div>
+    </div>
+    <div class="hint" aria-hidden="true"><i></i>Scroll</div>
+  </div>
+</div>
+
+<main>
+<!-- ================= ABOUT ================= -->
+<section class="block" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="collage rv" id="collage">
+        <svg class="spin" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="cp" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs><text><textPath href="#cp">Organized · Reliable · On time · </textPath></text></svg>
+        <div class="main"><img src="img/about.webp" alt="Glyzel smiling in a white blazer" loading="lazy" width="900" height="1320"></div>
+        <div class="sm s1" data-speed="-0.12"><img src="img/g2.webp" alt="Glyzel at an office desk in a blue shirt" loading="lazy" width="600" height="792"></div>
+        <div class="sm s2" data-speed="0.1"><img src="img/g1.webp" alt="Glyzel in a white blazer and black shirt" loading="lazy" width="600" height="792"></div>
+        <div class="badge5" data-speed="-0.06"><b><span data-count="5">5</span>+</b><span>years supporting<br>busy teams</span></div>
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow rv">About me</span>
+        <p class="big-line rv" style="--i:1">I turn messy inboxes, packed calendars and scattered files into <em>simple systems</em> you can rely on.</p>
+        <p class="rv" style="--i:2">I'm Glyzel, a virtual and executive assistant from Pasay, Philippines, with a degree in information technology and more than five years of hands-on work behind the scenes of real businesses.</p>
+        <p class="rv" style="--i:3">I've been the right hand of executives at a trucking and construction company, run HR, inventory and vendors for a retail store, grown social media pages for client brands, kept medical and insurance records accurate for a laboratory, solved customer issues in tech support, organized events and tutored students.</p>
+        <p class="rv" style="--i:4">Business owners usually come to me when they're doing everything themselves: replying to emails at midnight, missing follow-ups, posting whenever they remember, and keeping records in five different places. I take that work off your plate, set up simple systems that keep it running, and send you clear updates so you always know what's done.</p>
+        <div class="stats rv" style="--i:5">
+          <div><strong><span data-count="5">5</span>+</strong><span>years of experience</span></div>
+          <div><strong><span data-count="10">10</span>+</strong><span>industries supported</span></div>
+          <div><strong><span data-count="25">25</span>+</strong><span>tools mastered</span></div>
+        </div>
+        <div class="rv" style="--i:5"><a class="btn solid" href="#contact">Work with me</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="head rv" style="margin-top:110px"><span class="eyebrow">How I can help you</span><h2>Hand it over. <em>I'll handle it.</em></h2>
+      <p>Here's exactly what I take off your plate, and what you get back.</p></div>
+    <div class="help">
+      <div class="hc rv"><span class="hn">01</span><h3>Executive &amp; virtual assistance</h3><ul><li>Inbox cleaned and kept at zero</li><li>Calendar booked with no double bookings</li><li>Travel, meetings and follow-ups arranged</li></ul><p class="get">You get: 10+ hours back every week.</p></div>
+      <div class="hc rv" style="--i:1"><span class="hn">02</span><h3>Social media management</h3><ul><li>Monthly content plan and calendar</li><li>Posts, reels, captions and thumbnails</li><li>Comments, DMs and weekly reports</li></ul><p class="get">You get: a page that posts consistently and grows.</p></div>
+      <div class="hc rv" style="--i:2"><span class="hn">03</span><h3>Graphic design</h3><ul><li>Social posts, banners and covers</li><li>Flyers, menus and invitations</li><li>Brand-consistent templates</li></ul><p class="get">You get: designs that look professional.</p></div>
+      <div class="hc rv"><span class="hn">04</span><h3>HR &amp; recruitment</h3><ul><li>Job posts, screening and interviews</li><li>Onboarding, schedules and leave</li><li>Payroll prep and performance reviews</li></ul><p class="get">You get: hiring done in days, not weeks.</p></div>
+      <div class="hc rv" style="--i:1"><span class="hn">05</span><h3>Operations, logistics &amp; vendors</h3><ul><li>Stock tracking with reorder alerts</li><li>Vendor lists, quotes and purchase orders</li><li>Truck dispatch and delivery updates</li></ul><p class="get">You get: no more stock-outs or surprise costs.</p></div>
+      <div class="hc rv" style="--i:2"><span class="hn">06</span><h3>Event organizing</h3><ul><li>Budget, suppliers and run of show</li><li>Guest list, RSVPs and seating</li><li>On-the-day coordination</li></ul><p class="get">You get: a smooth event you can enjoy.</p></div>
+      <div class="hc rv"><span class="hn">07</span><h3>Customer support</h3><ul><li>Email, chat and social media replies</li><li>FAQ and saved-reply library</li><li>Refunds and escalations handled</li></ul><p class="get">You get: happy customers and fast replies.</p></div>
+      <div class="hc rv" style="--i:1"><span class="hn">08</span><h3>Admin, bookkeeping &amp; medical records</h3><ul><li>Data entry and clean-up</li><li>Invoices and expenses in QuickBooks</li><li>Patient and insurance records organized</li></ul><p class="get">You get: accurate records you can find fast.</p></div>
+      <div class="hc rv" style="--i:2"><span class="hn">09</span><h3>Tutoring, proofreading &amp; transcription</h3><ul><li>Lesson plans and one-on-one tutoring</li><li>Error-free documents and posts</li><li>Timestamped transcripts</li></ul><p class="get">You get: clear, polished work.</p></div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true"><div class="track" id="mq"><span>Inbox management</span><span>Calendar management</span><span>Social media</span><span>Customer support</span><span>HR &amp; recruitment</span><span>Event coordination</span><span>Bookkeeping</span><span>Tutoring</span><span>Proofreading</span><span>Transcription</span></div></div>
+
+  <div class="wrap">
+    <h3 class="sub-h rv" style="margin-top:70px">Tools I use <small>so you don't have to train me</small></h3>
+    <div class="toolgrid">
+      <div class="tg rv"><h4>Email &amp; calendar</h4><ul><li>Gmail</li><li>Outlook</li><li>Google Calendar</li><li>Calendly</li></ul></div>
+      <div class="tg rv" style="--i:1"><h4>Office &amp; files</h4><ul><li>Google Workspace</li><li>Docs &amp; Sheets</li><li>Microsoft 365</li><li>Word &amp; Excel</li><li>Google Drive</li><li>OneDrive</li><li>Dropbox</li></ul></div>
+      <div class="tg rv" style="--i:2"><h4>Projects</h4><ul><li>Notion</li><li>ClickUp</li><li>Trello</li></ul></div>
+      <div class="tg rv"><h4>Communication</h4><ul><li>Slack</li><li>Microsoft Teams</li><li>Zoom</li><li>Discord</li></ul></div>
+      <div class="tg rv" style="--i:1"><h4>Marketing &amp; design</h4><ul><li>Meta Business Suite</li><li>Mailchimp</li><li>Canva</li><li>CapCut</li><li>Sony Vegas Pro</li></ul></div>
+      <div class="tg rv" style="--i:2"><h4>Finance, AI &amp; support</h4><ul><li>QuickBooks</li><li>ChatGPT</li><li>Claude</li><li>Grammarly</li><li>TeamViewer</li><li>AnyDesk</li></ul></div>
+    </div>
+    <div class="traits">
+      <div class="rv"><b>Reliable</b><p>Deadlines met, every time.</p></div>
+      <div class="rv" style="--i:1"><b>Clear updates</b><p>You always know where a task stands.</p></div>
+      <div class="rv" style="--i:2"><b>Organized</b><p>Files and tasks kept easy to find.</p></div>
+      <div class="rv" style="--i:3"><b>Fast learner</b><p>New tool? I'll learn it quickly.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="block exp" id="experience">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Work experience</span><h2>Where I've <em>helped.</em></h2></div>
+    <ol class="tl" id="tl"><span class="fill" aria-hidden="true"></span>
+      <li class="job"><time>2025 – 2026</time><div><h3>Social Media Manager</h3><p class="co">Freelance · multiple client brands</p><ul>
+        <li>Planned, scheduled and published content on Facebook, Instagram, TikTok and LinkedIn.</li>
+        <li>Kept content calendars and trackers, and coordinated creators and designers.</li>
+        <li>Made graphics, captions and short video edits, plus weekly and month-end reports.</li></ul></div></li>
+      <li class="job"><time>2024 – 2026</time><div><h3>HR, Admin &amp; Operations Manager</h3><p class="co">Retail convenience store</p><ul>
+        <li>Ran daily operations: staff scheduling, inventory control and vendor coordination.</li>
+        <li>Handled hiring, onboarding, payroll coordination and performance reviews.</li>
+        <li>Kept records, tracked expenses and supply orders, and reported to management.</li></ul></div></li>
+      <li class="job"><time>2022 – 2026</time><div><h3>Executive &amp; Administrative Assistant</h3><p class="co">Trucking and construction company</p><ul>
+        <li>Managed executive calendars, meetings, travel and inbox follow-ups.</li>
+        <li>Coordinated truck dispatch: assigned drivers and units, scheduled deliveries and updated clients and site teams on arrival times.</li>
+        <li>Main point of contact between executives and clients.</li>
+        <li>Organized business records in cloud storage so documents are found faster.</li></ul></div></li>
+      <li class="job"><time>2021 – 2022</time><div><h3>Laboratory Medical Data Analyst</h3><p class="co">Medical laboratory</p><ul>
+        <li>Entered and organized medical data accurately for healthcare providers and insurers.</li>
+        <li>Analyzed data to spot trends and kept records processed on time.</li></ul></div></li>
+      <li class="job"><time>2015 – present</time><div><h3>Tutor</h3><p class="co">Private and online · kids and adults</p><ul>
+        <li>Teaching one-on-one and small-group lessons in English, reading and school subjects since 2015.</li>
+        <li>Prepare lesson plans, worksheets and simple progress reports for parents.</li>
+        <li>Adjust each lesson to the student's pace, from beginners to exam review.</li></ul></div></li>
+      <li class="job"><time>2019</time><div><h3>Technical Support Specialist</h3><p class="co">Outsourcing company · project-based</p><ul>
+        <li>Solved software, hardware and network issues across high query volumes.</li>
+        <li>Trained teammates on troubleshooting methods.</li></ul></div></li>
+      <li class="job"><time>2020 – 2024</time><div><h3>BS Information Technology</h3><p class="co">Education</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section class="block" id="portfolio">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Portfolio</span><h2>Sample <em>work</em> by service</h2>
+      <p>Pick a service to see what I deliver. All brands, names and numbers in these samples are made up, so no client information is shared.</p></div>
+
+    <div class="tabs" role="tablist" aria-label="Services" id="tabs">
+      <button class="tab" role="tab" id="t-ea" aria-controls="p-ea" aria-selected="true">Executive Assistant</button>
+      <button class="tab" role="tab" id="t-sm" aria-controls="p-sm" aria-selected="false">Social Media</button>
+      <button class="tab" role="tab" id="t-gd" aria-controls="p-gd" aria-selected="false">Graphic Design</button>
+      <button class="tab" role="tab" id="t-hr" aria-controls="p-hr" aria-selected="false">HR &amp; Recruitment</button>
+      <button class="tab" role="tab" id="t-op" aria-controls="p-op" aria-selected="false">Operations &amp; Logistics</button>
+      <button class="tab" role="tab" id="t-ev" aria-controls="p-ev" aria-selected="false">Event Organizer</button>
+      <button class="tab" role="tab" id="t-cs" aria-controls="p-cs" aria-selected="false">Customer Support</button>
+      <button class="tab" role="tab" id="t-ad" aria-controls="p-ad" aria-selected="false">Admin &amp; Bookkeeping</button>
+      <button class="tab" role="tab" id="t-md" aria-controls="p-md" aria-selected="false">Medical Records</button>
+      <button class="tab" role="tab" id="t-te" aria-controls="p-te" aria-selected="false">Teaching &amp; Tutoring</button>
+      <button class="tab" role="tab" id="t-pr" aria-controls="p-pr" aria-selected="false">Proofreading</button>
+      <button class="tab" role="tab" id="t-tr" aria-controls="p-tr" aria-selected="false">Transcription</button>
+    </div>
+
+    <!-- EXECUTIVE ASSISTANT -->
+    <div role="tabpanel" id="p-ea" aria-labelledby="t-ea">
+      <p class="niche-intro">Calendar, inbox, travel and files handled, so you can focus on decisions instead of admin.</p>
+      <div class="grid">
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Gmail · ceo@northpeak.co</span><em>0 unread</em></div>
+          <div class="inbox"><aside><b>Labels</b><span><i class="r"></i>1 · Urgent</span><span><i class="b"></i>2 · Clients</span><span><i class="g"></i>3 · Invoices</span><span><i class="a"></i>4 · Follow-up</span><span><i class="v"></i>5 · Newsletters</span></aside>
+          <div><div class="mail-row"><span class="star">★</span><span class="sub"><span class="who">R. Santos</span> · Contract for signature today</span><span class="lbl r">Urgent</span></div>
+          <div class="mail-row"><span class="star">★</span><span class="sub"><span class="who">Lumen Foods</span> · Q3 proposal questions</span><span class="lbl b">Clients</span></div>
+          <div class="mail-row"><span class="mut">☆</span><span class="sub"><span class="who">QuickBooks</span> · Invoice #1043 paid</span><span class="lbl g">Invoices</span></div>
+          <div class="mail-row"><span class="mut">☆</span><span class="sub"><span class="who">M. Lee</span> · Waiting on revised quote</span><span class="lbl a">Follow-up</span></div>
+          <div class="mail-row"><span class="mut">☆</span><span class="sub"><span class="who">HBR</span> · Weekly digest</span><span class="lbl v">News</span></div></div></div></div>
+          <div class="txt"><h3>Inbox Management <span class="tag-sample">Sample</span></h3><p>Took a 2,400-email inbox to zero with five numbered labels, filters and saved replies. It's swept twice a day, so only urgent mail reaches the executive.</p><div class="used"><span>Gmail</span><span>Outlook</span><span>Filters</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Google Calendar · Week of Mar 9</span></div>
+          <div class="cal"><div class="h"></div><div class="h">Mon</div><div class="h">Tue</div><div class="h">Wed</div><div class="h">Thu</div><div class="h">Fri</div>
+            <div class="tm">8 AM</div>
+            <div class="col" style="grid-column:2"><div class="ev b" style="top:2px;height:28px">Team sync</div><div class="ev v" style="top:62px;height:58px">Focus time</div><div class="ev p" style="top:152px;height:28px">Lunch · investor</div></div>
+            <div class="col" style="grid-column:3"><div class="ev g" style="top:32px;height:44px">Client call · Lumen</div><div class="ev v" style="top:122px;height:58px">Focus time</div></div>
+            <div class="col" style="grid-column:4"><div class="ev a" style="top:2px;height:118px">Flight MNL → CEB</div><div class="ev g" style="top:182px;height:40px">Site visit</div></div>
+            <div class="col" style="grid-column:5"><div class="ev b" style="top:2px;height:28px">Team sync</div><div class="ev g" style="top:212px;height:40px">Client call (moved)</div></div>
+            <div class="col" style="grid-column:6"><div class="ev v" style="top:32px;height:58px">Focus time</div><div class="ev r" style="top:122px;height:28px">Payroll approval</div></div>
+            <div class="tm">9</div><div class="tm">10</div><div class="tm">11</div><div class="tm">12 PM</div><div class="tm">1</div><div class="tm">2</div><div class="tm">3</div><div class="tm">4</div></div></div>
+          <div class="txt"><h3>Calendar Management <span class="tag-sample">Sample</span></h3><p>A colour-coded week with protected focus time, travel buffers and no double bookings. Meetings are booked through Calendly without back-and-forth emails.</p><div class="used"><span>Google Calendar</span><span>Outlook</span><span>Calendly</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Notion · Trip itinerary</span></div>
+          <div class="doc"><h5>Manila → Singapore · Mar 12–14</h5><p class="mut">Prepared for R. Santos · local times</p>
+            <div class="row"><b>Mar 12</b><span>PR 501 dep. 06:15 NAIA T1 → arr. 09:50 Changi · seat 3A</span></div>
+            <div class="row"><b>Hotel</b><span>Carlton City · conf. #SG88213 · late checkout 2 PM</span></div>
+            <div class="row"><b>Mar 13</b><span>10:00 Lumen Foods HQ · 19:00 dinner reservation</span></div>
+            <div class="row"><b>Mar 14</b><span>PR 508 dep. 15:40 → arr. 19:20 · car booked home</span></div></div></div>
+          <div class="txt"><h3>Travel Coordination <span class="tag-sample">Sample</span></h3><p>Flights, hotel, transfers and meetings on one page the executive can open on their phone.</p><div class="used"><span>Notion</span><span>Google Docs</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>ClickUp · Executive tasks</span></div>
+          <div class="scroll-x"><div class="board">
+            <div><h4>To do <span>3</span></h4><div class="card">Book Cebu site visit<div class="who"><span class="lbl a">Travel</span><span class="av">GC</span></div></div><div class="card">Renew business permit<div class="who"><span class="lbl r">Due Fri</span><span class="av">GC</span></div></div></div>
+            <div><h4>In progress <span>2</span></h4><div class="card">Prepare board deck<div class="who"><span class="lbl b">Docs</span><span class="av">GC</span></div></div><div class="card">Vendor quotes x3<div class="who"><span class="lbl v">Ops</span><span class="av">GC</span></div></div></div>
+            <div><h4>Done <span>12</span></h4><div class="card">Q1 expense report<div class="who"><span class="lbl g">Finance</span><span class="av">GC</span></div></div><div class="card">Client onboarding pack<div class="who"><span class="lbl b">Docs</span><span class="av">GC</span></div></div></div></div></div></div>
+          <div class="txt"><h3>Task &amp; Project Tracking <span class="tag-sample">Sample</span></h3><p>Every request becomes a task with an owner, due date and status, so nothing gets lost in chat.</p><div class="used"><span>ClickUp</span><span>Trello</span><span>Slack</span><span>Teams</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Google Drive · Northpeak Co.</span></div>
+          <div class="tree">
+            <div><svg viewBox="0 0 24 24" fill="#D99A00"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><b>01 Admin</b></div>
+            <div style="padding-left:20px"><svg viewBox="0 0 24 24" fill="#D99A00"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Permits &amp; Licenses</div>
+            <div><svg viewBox="0 0 24 24" fill="#3B6EF5"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><b>02 Clients</b></div>
+            <div style="padding-left:20px"><svg viewBox="0 0 24 24" fill="#3B6EF5"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Lumen Foods</div>
+            <div style="padding-left:40px" class="mut">2026-03-02_LumenFoods_Proposal_v2.pdf</div>
+            <div><svg viewBox="0 0 24 24" fill="#2F9E6A"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><b>03 Finance</b></div>
+            <div><svg viewBox="0 0 24 24" fill="#D9718D"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><b>04 HR</b></div></div></div>
+          <div class="txt"><h3>File Organization <span class="tag-sample">Sample</span></h3><p>Numbered folders and one naming rule (date_client_document_version), so any file is found in seconds.</p><div class="used"><span>Google Drive</span><span>OneDrive</span><span>Dropbox</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Gmail · Templates</span></div>
+          <div class="cap"><span class="hook">Meeting request · reschedule</span><span class="mut">"Hi Maria, something urgent came up on Rafael's side. Would Thursday at 3 PM or Friday at 10 AM work instead?"</span></div>
+          <div class="cap"><span class="hook">Follow-up · no reply after 3 days</span><span class="mut">"Hi Mark, bringing this back to the top of your inbox. Could you send the revised quote by Wednesday?"</span></div>
+          <div class="cap"><span class="hook">New client welcome</span><span class="mut">"Welcome aboard! Attached is your onboarding checklist and the link to book your kickoff call."</span></div></div>
+          <div class="txt"><h3>Email Templates <span class="tag-sample">Sample</span></h3><p>Ready-to-send replies in the executive's voice for emails that come up every week.</p><div class="used"><span>Gmail</span><span>Outlook</span><span>Grammarly</span></div></div></article>
+      </div>
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div role="tabpanel" id="p-sm" aria-labelledby="t-sm" hidden>
+      <p class="niche-intro">Content, design, scheduling, community and reporting for Facebook, Instagram, TikTok, YouTube and LinkedIn.</p>
+      <h3 class="sub-h">Social media posts <small>Tap any post to view it larger</small></h3>
+      <div class="reel" data-reel="1" data-dir="-1"><div class="track"><!--POSTS_A--><button type="button" data-full="img/d/p_elnido.jpg" aria-label="Lakbay Wings · El Nido tour post"><img src="img/d/p_elnido_t.jpg" alt="Lakbay Wings · El Nido tour post" width="480" height="600"></button><button type="button" data-full="img/d/p_steak.jpg" aria-label="Grill &amp; Co. · 50% off promo"><img src="img/d/p_steak_t.jpg" alt="Grill &amp; Co. · 50% off promo" width="600" height="600"></button><button type="button" data-full="img/d/p_latte.jpg" aria-label="Kapé Lokal · Spanish Latte delivery post"><img src="img/d/p_latte_t.jpg" alt="Kapé Lokal · Spanish Latte delivery post" width="480" height="600"></button><button type="button" data-full="img/d/p_resort.jpg" aria-label="Isla Verde Resort · Brand post"><img src="img/d/p_resort_t.jpg" alt="Isla Verde Resort · Brand post" width="480" height="600"></button><button type="button" data-full="img/d/p_burger.jpg" aria-label="Smash Bros. Burgers · Product post"><img src="img/d/p_burger_t.jpg" alt="Smash Bros. Burgers · Product post" width="480" height="600"></button><button type="button" data-full="img/d/p_bogo.jpg" aria-label="Kapé Lokal · Buy 1 Take 1 promo"><img src="img/d/p_bogo_t.jpg" alt="Kapé Lokal · Buy 1 Take 1 promo" width="480" height="600"></button><button type="button" data-full="img/d/p_boracay.jpg" aria-label="Lakbay Wings · Boracay package post"><img src="img/d/p_boracay_t.jpg" alt="Lakbay Wings · Boracay package post" width="480" height="600"></button><!--/POSTS_A--></div></div>
+      <div class="reel" data-reel="1" data-dir="1"><div class="track"><!--POSTS_B--><button type="button" data-full="img/d/p_grill.jpg" aria-label="Grill &amp; Co. · Delivery post"><img src="img/d/p_grill_t.jpg" alt="Grill &amp; Co. · Delivery post" width="480" height="600"></button><button type="button" data-full="img/d/p_matcha.jpg" aria-label="Kapé Lokal · New menu item post"><img src="img/d/p_matcha_t.jpg" alt="Kapé Lokal · New menu item post" width="480" height="600"></button><button type="button" data-full="img/d/p_sunset.jpg" aria-label="Lakbay Wings · Add-on tour post"><img src="img/d/p_sunset_t.jpg" alt="Lakbay Wings · Add-on tour post" width="480" height="600"></button><button type="button" data-full="img/d/p_iced.jpg" aria-label="Brew Theory · Product post"><img src="img/d/p_iced_t.jpg" alt="Brew Theory · Product post" width="480" height="600"></button><button type="button" data-full="img/d/p_slow.jpg" aria-label="Brew Theory · Brand awareness post"><img src="img/d/p_slow_t.jpg" alt="Brew Theory · Brand awareness post" width="480" height="600"></button><!--/POSTS_B--></div></div>
+      <h3 class="sub-h">YouTube thumbnails</h3>
+      <div class="reel r-wide" data-reel="1" data-dir="-1"><div class="track"><!--YT--><button type="button" data-full="img/d/yt_elnido.jpg" aria-label="Travel vlog thumbnail · El Nido budget guide"><img src="img/d/yt_elnido_t.jpg" alt="Travel vlog thumbnail · El Nido budget guide" width="782" height="440"></button><button type="button" data-full="img/d/yt_burger.jpg" aria-label="Food vlog thumbnail · Biggest burger"><img src="img/d/yt_burger_t.jpg" alt="Food vlog thumbnail · Biggest burger" width="782" height="440"></button><button type="button" data-full="img/d/yt_resort.jpg" aria-label="Resort tour thumbnail"><img src="img/d/yt_resort_t.jpg" alt="Resort tour thumbnail" width="782" height="440"></button><button type="button" data-full="img/d/yt_steak.jpg" aria-label="Cooking thumbnail · Steak at home"><img src="img/d/yt_steak_t.jpg" alt="Cooking thumbnail · Steak at home" width="782" height="440"></button><button type="button" data-full="img/d/yt_latte.jpg" aria-label="Food review thumbnail · Spanish latte ranking"><img src="img/d/yt_latte_t.jpg" alt="Food review thumbnail · Spanish latte ranking" width="782" height="440"></button><button type="button" data-full="img/d/yt_boracay.jpg" aria-label="Travel vlog thumbnail · Boracay"><img src="img/d/yt_boracay_t.jpg" alt="Travel vlog thumbnail · Boracay" width="782" height="440"></button><button type="button" data-full="img/d/yt_coron.jpg" aria-label="Travel vlog thumbnail · Coron tours"><img src="img/d/yt_coron_t.jpg" alt="Travel vlog thumbnail · Coron tours" width="782" height="440"></button><!--/YT--></div></div>
+
+      <div class="grid" style="margin-top:36px">
+        <article class="work wide"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Growth report · Kapé Lokal Instagram</span><em>Jan – Dec</em></div>
+          <div class="mb">
+            <svg class="draw" viewBox="0 0 600 200" width="100%" role="img" aria-label="Followers grew from 100 in January to 10,000 in December">
+              <g stroke="#E8E4EC"><line x1="40" y1="170" x2="590" y2="170"/><line x1="40" y1="120" x2="590" y2="120" stroke-dasharray="3 4"/><line x1="40" y1="70" x2="590" y2="70" stroke-dasharray="3 4"/><line x1="40" y1="20" x2="590" y2="20" stroke-dasharray="3 4"/></g>
+              <g font-size="10" fill="#6B7186"><text x="0" y="173">0</text><text x="0" y="123">3K</text><text x="0" y="73">6K</text><text x="0" y="23">10K</text>
+              <text x="40" y="190">Jan</text><text x="175" y="190">Apr</text><text x="315" y="190">Jul</text><text x="450" y="190">Oct</text><text x="560" y="190">Dec</text></g>
+              <path d="M40 168 L90 167 L140 164 L190 158 L240 146 L290 132 L340 120 L390 100 L440 82 L490 60 L540 38 L590 20 L590 170 L40 170Z" fill="#D9718D" opacity=".12" class="ar"/>
+              <path class="ln" d="M40 168 L90 167 L140 164 L190 158 L240 146 L290 132 L340 120 L390 100 L440 82 L490 60 L540 38 L590 20" fill="none" stroke="#D9718D" stroke-width="3"/>
+              <g class="ar" font-size="10" font-weight="700" fill="#1F2433">
+                <circle cx="190" cy="158" r="5" fill="#3B6EF5"/><text x="150" y="146">First viral reel</text>
+                <circle cx="340" cy="120" r="5" fill="#D99A00"/><text x="300" y="108">Creator collab</text>
+                <circle cx="490" cy="60" r="5" fill="#2F9E6A"/><text x="430" y="48">Giveaway week</text>
+                <circle cx="590" cy="20" r="6" fill="#D9718D"/></g>
+            </svg>
+          </div>
+          <div class="kpis"><div class="kpi"><span class="mut">Followers</span><b>100 → 10,000</b><span class="up">▲ 100×</span></div><div class="kpi"><span class="mut">Avg. reach / post</span><b>18.2K</b><span class="up">▲ 41×</span></div><div class="kpi"><span class="mut">Engagement rate</span><b>7.4%</b><span class="up">▲ 3.1 pts</span></div><div class="kpi"><span class="mut">DM orders / month</span><b>320</b><span class="up">▲ from 6</span></div></div></div>
+          <div class="txt"><h3>Growth Case Study: 100 to 10K Followers <span class="tag-sample">Sample</span></h3><p>A year-long plan for a new coffee shop: 4 posts and 5 reels a week, a creator collab in April and a giveaway in October, with every result tracked monthly.</p><div class="used"><span>Instagram</span><span>Meta Business Suite</span><span>CapCut</span><span>Canva</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Facebook · Kapé Lokal</span></div>
+          <div class="fb"><div class="cover" style="background-image:url('img/d/fbcover.jpg')"></div>
+            <div class="prow"><div class="ppic" style="background-image:url('img/d/logo_kape.png')"></div><div class="pname"><b>Kapé Lokal</b><span class="mut">8.4K followers · Coffee shop</span></div></div>
+            <div class="pbtn"><span>Order now</span><span>Message</span><span>Follow</span></div>
+            <div class="fbi"><b>Intro</b><span>Specialty coffee from Philippine beans, brewed slow. Dine in, take out or order on GrabFood and foodpanda.</span><span>📍 Pasay City, Metro Manila</span><span>🕘 Open daily, 7:00 AM – 10:00 PM</span><span>💬 Typically replies within an hour</span></div></div></div>
+          <div class="txt"><h3>Facebook Page Setup <span class="tag-sample">Sample</span></h3><p>Cover photo, profile, intro and buttons set up so customers know what you offer and how to book in seconds.</p><div class="used"><span>Facebook</span><span>Meta Business Suite</span><span>Canva</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Instagram · @kapelokal.ph</span></div>
+          <div class="ig"><div class="phd"><div class="pp"><div>KL</div></div><div class="nums"><div><b>186</b>posts</div><div><b>10.2K</b>followers</div><div><b>312</b>following</div></div></div>
+            <div class="bio"><b>Kapé Lokal ☕ Specialty Coffee</b><br>Philippine beans, brewed slow.<br>📍 Pasay · Open 7AM–10PM daily<br>🛵 Order on GrabFood &amp; foodpanda<br><a href="#p-sm">linktr.ee/kapelokal</a></div>
+            <div class="btns"><span>Follow</span><span>Message</span><span>Menu</span></div>
+            <div class="hl"><div><i style="background-color:#C9A27E"></i>Menu</div><div><i style="background-color:#8C5A3C"></i>Reviews</div><div><i style="background-color:#E8C9A9"></i>Promos</div><div><i style="background-color:#5B3A2E"></i>Events</div><div><i style="background-color:#D9B48F"></i>Merch</div></div>
+            <div class="gridp" id="iggrid"><!--IG--><div style="background-image:url('img/d/p_bogo_t.jpg')"></div><div style="background-image:url('img/d/p_matcha_t.jpg')"></div><div style="background-image:url('img/d/p_latte_t.jpg')"></div><div style="background-image:url('img/d/p_slow_t.jpg')"></div><div style="background-image:url('img/d/p_iced_t.jpg')"></div><div style="background-image:url('img/d/p_bogo_t.jpg')"></div><div style="background-image:url('img/d/p_latte_t.jpg')"></div><div style="background-image:url('img/d/p_matcha_t.jpg')"></div><div style="background-image:url('img/d/p_slow_t.jpg')"></div><!--/IG--></div></div></div>
+          <div class="txt"><h3>Profile Setup &amp; Bio <span class="tag-sample">Sample</span></h3><p>A profile that answers "what, where, how to order" in five seconds: clear bio, organized highlights and a consistent grid.</p><div class="used"><span>Instagram</span><span>Canva</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Weekly report · Apr 1–7</span><em>Kapé Lokal</em></div>
+          <div class="kpis"><div class="kpi"><span class="mut">Reach</span><b>12.4K</b><span class="up">▲ 18%</span></div><div class="kpi"><span class="mut">Engagement</span><b>6.2%</b><span class="up">▲ 0.8</span></div><div class="kpi"><span class="mut">Followers</span><b>+214</b><span class="up">▲ 31%</span></div><div class="kpi"><span class="mut">Clicks</span><b>389</b><span class="dn">▼ 4%</span></div></div>
+          <div class="bars" aria-label="Daily reach"><div style="height:40%"></div><div style="height:55%"></div><div style="height:48%"></div><div class="hi" style="height:96%"></div><div style="height:62%"></div><div style="height:70%"></div><div style="height:58%"></div></div>
+          <div class="bars-x"><span>M</span><span>T</span><span>W</span><span>Th</span><span>F</span><span>Sa</span><span>Su</span></div>
+          <div class="mb" style="border-top:1px solid var(--m-line)"><b>Top post:</b> <span class="mut">Thursday reel "How we roast" · 5.1K views.</span></div></div>
+          <div class="txt"><h3>Weekly Report <span class="tag-sample">Sample</span></h3><p>A one-page Monday summary: what grew, what dropped, the best post and next week's plan.</p><div class="used"><span>Meta Insights</span><span>Google Sheets</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Notion · Content calendar · April</span></div>
+          <div class="scroll-x"><table class="t"><tr><th>Date</th><th>Platform</th><th>Post</th><th>Type</th><th>Status</th></tr>
+            <tr><td>Apr 1</td><td>IG + FB</td><td>New menu reveal</td><td>Carousel</td><td><span class="st done">Published</span></td></tr>
+            <tr><td>Apr 3</td><td>TikTok</td><td>Behind the counter</td><td>Reel</td><td><span class="st done">Published</span></td></tr>
+            <tr><td>Apr 5</td><td>YouTube</td><td>Barista day vlog</td><td>Video</td><td><span class="st prog">Scheduled</span></td></tr>
+            <tr><td>Apr 8</td><td>IG</td><td>Customer review</td><td>Static</td><td><span class="st prog">In design</span></td></tr>
+            <tr><td>Apr 10</td><td>IG + TikTok</td><td>3 ways to order</td><td>Reel</td><td><span class="st todo">Idea</span></td></tr></table></div></div>
+          <div class="txt"><h3>Content Calendar <span class="tag-sample">Sample</span></h3><p>A month of posts by platform, format and status, approved by the client in one place.</p><div class="used"><span>Notion</span><span>ClickUp</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Mailchimp · April newsletter</span><em><span class="st done">Sent</span></em></div>
+          <div class="kpis"><div class="kpi"><span class="mut">Recipients</span><b>2,340</b></div><div class="kpi"><span class="mut">Open rate</span><b>41.2%</b><span class="up">▲ industry 33%</span></div><div class="kpi"><span class="mut">Click rate</span><b>6.8%</b><span class="up">▲ 2.1</span></div><div class="kpi"><span class="mut">Orders</span><b>87</b></div></div>
+          <div class="cap"><span class="hook">Subject: Your free pastry is waiting ☕</span><span class="mut">Preview: Bring a friend this weekend and the croissants are on us.</span></div></div>
+          <div class="txt"><h3>Email Newsletter <span class="tag-sample">Sample</span></h3><p>Monthly campaigns with a clear offer and one button, tracked against the industry average.</p><div class="used"><span>Mailchimp</span><span>Canva</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Captions · Instagram</span></div>
+          <div class="cap"><span class="hook">Your 3 PM slump called. It wants a cold brew.</span><span class="mut">Slow-steeped for 18 hours, smooth enough to drink black. At every branch until 10 PM.</span><span class="tags">#KapeLokal #ColdBrewPH #PasayCafe</span></div>
+          <div class="cap"><span class="hook">Save this before your next island trip.</span><span class="mut">5 things to pack for Coron that nobody tells you about. Number 4 saves your phone.</span><span class="tags">#LakbayWings #CoronPalawan</span></div></div>
+          <div class="txt"><h3>Captions &amp; Copywriting <span class="tag-sample">Sample</span></h3><p>Hook-first captions in the brand's voice with a clear call to action.</p><div class="used"><span>Copywriting</span><span>Grammarly</span></div></div></article>
+      </div>
+    </div>
+
+    <!-- GRAPHIC DESIGN -->
+    <div role="tabpanel" id="p-gd" aria-labelledby="t-gd" hidden>
+      <p class="niche-intro">Banners, flyers and invitations made from real photos, edited and designed for each brand. Tap any design to view it larger.</p>
+      <h3 class="sub-h">Banners &amp; covers</h3>
+      <div class="reel r-wide" data-reel="1" data-dir="1"><div class="track"><!--BANNERS--><button type="button" data-full="img/d/b_travel.jpg" aria-label="Lakbay Wings · Facebook cover"><img src="img/d/b_travel_t.jpg" alt="Lakbay Wings · Facebook cover" width="1156" height="440"></button><button type="button" data-full="img/d/b_food.jpg" aria-label="Grill &amp; Co. · Facebook cover"><img src="img/d/b_food_t.jpg" alt="Grill &amp; Co. · Facebook cover" width="1156" height="440"></button><button type="button" data-full="img/d/b_resort.jpg" aria-label="Isla Verde Resort · Website banner"><img src="img/d/b_resort_t.jpg" alt="Isla Verde Resort · Website banner" width="1320" height="440"></button><button type="button" data-full="img/d/fbcover.jpg" aria-label="Kapé Lokal · Facebook cover"><img src="img/d/fbcover_t.jpg" alt="Kapé Lokal · Facebook cover" width="1156" height="440"></button><!--/BANNERS--></div></div>
+      <h3 class="sub-h">Flyers &amp; invitations</h3>
+      <div class="reel" data-reel="1" data-dir="-1"><div class="track"><!--FLYERS--><button type="button" data-full="img/d/f_coron.jpg" aria-label="Lakbay Wings · Tour price flyer"><img src="img/d/f_coron_t.jpg" alt="Lakbay Wings · Tour price flyer" width="424" height="600"></button><button type="button" data-full="img/d/f_menu.jpg" aria-label="Smash Bros. Burgers · Menu flyer"><img src="img/d/f_menu_t.jpg" alt="Smash Bros. Burgers · Menu flyer" width="424" height="600"></button><button type="button" data-full="img/d/f_event.jpg" aria-label="Corporate event invitation"><img src="img/d/f_event_t.jpg" alt="Corporate event invitation" width="424" height="600"></button><button type="button" data-full="img/d/f_venue.jpg" aria-label="Casa Ilaw · Wedding venue flyer"><img src="img/d/f_venue_t.jpg" alt="Casa Ilaw · Wedding venue flyer" width="424" height="600"></button><button type="button" data-full="img/d/f_resort.jpg" aria-label="Isla Verde Resort · Rates flyer"><img src="img/d/f_resort_t.jpg" alt="Isla Verde Resort · Rates flyer" width="424" height="600"></button><!--/FLYERS--></div></div>
+    </div>
+
+    <!-- HR -->
+    <div role="tabpanel" id="p-hr" aria-labelledby="t-hr" hidden>
+      <p class="niche-intro">The full employee journey, from job post to payroll, based on running HR and operations for a retail business.</p>
+      <div class="grid">
+        <article class="work wide"><div class="mock app-raw" data-url="ph.indeed.com/viewjob?jk=storeassociate-pasay"><div class="ind">
+          <div class="itop"><span class="logo">indeed</span><div class="search"><span>Store Associate</span><span>Pasay City</span><b>Find jobs</b></div></div>
+          <div class="body"><div class="list">
+            <div class="jc on"><b>Store Associate</b>Kapé Lokal Group · Pasay City<br><span class="tagp">₱645 a day</span><span class="tagp">Full-time</span><span class="tagp">Day / night shift</span><br><span style="color:#1F6E43;font-weight:700">Hiring multiple candidates</span></div>
+            <div class="jc"><b>Inventory Clerk</b>Kapé Lokal Group · Pasay City<br><span class="tagp">₱18,000 a month</span><span class="tagp">Full-time</span></div>
+            <div class="jc"><b>Barista (with or without experience)</b>Kapé Lokal Group · Makati<br><span class="tagp">₱650 a day</span><span class="tagp">Part-time</span></div></div>
+          <div class="det"><h5>Store Associate</h5><span>Kapé Lokal Group · 4.3 ★ · Pasay City, Metro Manila</span><span><b>₱645 a day</b> · Full-time · Day shift, night shift</span>
+            <div class="apply"><b>Apply now</b><i>♡</i></div>
+            <b>Benefits</b><span>SSS, PhilHealth, Pag-IBIG · 13th month pay · Free meals · Paid training</span>
+            <b>What you'll do</b><ul><li>Serve customers and run the cashier accurately</li><li>Restock shelves and help with weekly inventory counts</li><li>Keep the store clean and welcoming</li></ul>
+            <span style="color:#595959">Posted 2 days ago · 48 applicants</span></div></div></div></div>
+          <div class="txt"><h3>Indeed Job Posting <span class="tag-sample">Sample</span></h3><p>Clear, honest job ads with pay, benefits and duties up front, so the right people apply. This post brought 48 applicants in two days.</p><div class="used"><span>Indeed</span><span>Facebook Jobs</span><span>JobStreet</span></div></div></article>
+
+        <article class="work wide"><div class="mock app-raw" data-url="linkedin.com/jobs/view/executive-assistant-northpeak"><div class="li">
+          <div class="ltop"><span class="logo">in</span><span class="srch">🔍 Search</span><div class="nav"><span>Home</span><span>My Network</span><span style="color:#191919;font-weight:700;border-bottom:2px solid #191919">Jobs</span><span>Messaging</span><span>Notifications</span></div></div>
+          <div class="card"><div class="cov"></div><div class="cb"><div class="clogo">N</div>
+            <h5>Executive Assistant to the CEO</h5><span>Northpeak Co. · Taguig, Metro Manila (Hybrid) · 1 day ago · <b style="color:#1F6E43">62 applicants</b></span>
+            <div class="chips"><span>Full-time</span><span>Hybrid</span><span>Mid-Senior level</span><span>₱45K–₱60K/month</span></div>
+            <div class="btns"><b>Easy Apply</b><i>Save</i></div>
+            <span><b>About the job</b><br>Northpeak Co. is looking for an organized Executive Assistant to manage the CEO's calendar, inbox, travel and board meeting preparation.</span>
+            <span><b>Qualifications:</b> 3+ years supporting executives · Google Workspace and Microsoft 365 · Excellent written English</span></div></div></div></div>
+          <div class="txt"><h3>LinkedIn Job Posting <span class="tag-sample">Sample</span></h3><p>Professional job posts for office and remote roles, with screening questions set up so only qualified candidates reach the shortlist.</p><div class="used"><span>LinkedIn Recruiter</span><span>Google Forms</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Trello · Applicant tracker</span></div>
+          <div class="scroll-x"><div class="board" style="--cols:4">
+            <div><h4>Applied <span>24</span></h4><div class="card">J. Reyes<div class="who"><span>Cashier</span><span class="av">JR</span></div></div><div class="card">A. Lim<div class="who"><span>Stock</span><span class="av">AL</span></div></div></div>
+            <div><h4>Screened <span>8</span></h4><div class="card">C. Dizon<div class="who"><span class="lbl g">Fit</span><span class="av">CD</span></div></div></div>
+            <div><h4>Interview <span>4</span></h4><div class="card">M. Cruz<div class="who"><span class="lbl b">Thu 2PM</span><span class="av">MC</span></div></div></div>
+            <div><h4>Hired <span>2</span></h4><div class="card">P. Santos<div class="who"><span class="lbl p">Start Jun 1</span><span class="av">PS</span></div></div></div></div></div></div>
+          <div class="txt"><h3>Applicant Tracking <span class="tag-sample">Sample</span></h3><p>Every applicant moves through clear stages, so no one is forgotten and hiring takes days, not weeks.</p><div class="used"><span>Trello</span><span>Google Forms</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Interview scorecard · Store Associate</span></div>
+          <div class="mb" style="display:flex;flex-direction:column;gap:2px">
+            <div class="skill"><span>Communication</span><span class="meter"><i style="width:80%"></i></span><b>4/5</b></div>
+            <div class="skill"><span>Customer service</span><span class="meter"><i style="width:100%"></i></span><b>5/5</b></div>
+            <div class="skill"><span>Cash handling</span><span class="meter"><i style="width:60%"></i></span><b>3/5</b></div>
+            <div class="skill"><span>Availability</span><span class="meter"><i style="width:100%"></i></span><b>5/5</b></div>
+            <div class="skill"><span><b>Overall</b></span><span class="mut">Recommend · 2nd interview</span><b>17</b></div></div></div>
+          <div class="txt"><h3>Interview Scorecard <span class="tag-sample">Sample</span></h3><p>Every candidate is rated on the same criteria, so hiring decisions are fair and quick.</p><div class="used"><span>Google Sheets</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>ClickUp · New hire onboarding</span><em>6 / 9</em></div>
+          <div class="check"><span class="meter"><i style="width:66%"></i></span>
+            <div><span class="box on"></span><span class="done-t">Signed contract received</span></div>
+            <div><span class="box on"></span><span class="done-t">SSS, PhilHealth, Pag-IBIG forms</span></div>
+            <div><span class="box on"></span><span class="done-t">201 file created</span></div>
+            <div><span class="box on"></span><span class="done-t">Day 1 orientation</span></div>
+            <div><span class="box"></span><span>Cash handling training</span></div>
+            <div><span class="box"></span><span>30-day evaluation</span></div></div></div>
+          <div class="txt"><h3>Onboarding Checklist <span class="tag-sample">Sample</span></h3><p>A repeatable checklist from signed offer to 30-day review, including government requirements.</p><div class="used"><span>ClickUp</span><span>Notion</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Google Sheets · Staff schedule</span></div>
+          <div class="scroll-x"><table class="t"><tr><th>Staff</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
+            <tr><td>Ana R.</td><td><span class="st todo">AM</span></td><td><span class="st todo">AM</span></td><td>Off</td><td><span class="st prog">PM</span></td><td><span class="st prog">PM</span></td><td><span class="st todo">AM</span></td></tr>
+            <tr><td>Ben T.</td><td><span class="st prog">PM</span></td><td>Off</td><td><span class="st todo">AM</span></td><td><span class="st todo">AM</span></td><td><span class="st late">Night</span></td><td><span class="st late">Night</span></td></tr>
+            <tr><td>Carla M.</td><td><span class="st late">Night</span></td><td><span class="st late">Night</span></td><td><span class="st prog">PM</span></td><td>Off</td><td><span class="st todo">AM</span></td><td><span class="st prog">PM</span></td></tr>
+            <tr><td>Dan P.</td><td>Off</td><td><span class="st prog">PM</span></td><td><span class="st late">Night</span></td><td><span class="st late">Night</span></td><td>Off</td><td><span class="st todo">AM</span></td></tr></table></div></div>
+          <div class="txt"><h3>Staff Scheduling <span class="tag-sample">Sample</span></h3><p>A 24-hour store covered every day, with fair rest days and colour-coded shifts.</p><div class="used"><span>Google Sheets</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Leave &amp; attendance · May</span></div>
+          <div class="scroll-x"><table class="t"><tr><th>Employee</th><th>Type</th><th>Dates</th><th>Days</th><th>Balance</th><th>Status</th></tr>
+            <tr><td>Ana R.</td><td>Vacation</td><td>May 6–8</td><td>3</td><td>7</td><td><span class="st done">Approved</span></td></tr>
+            <tr><td>Ben T.</td><td>Sick</td><td>May 13</td><td>1</td><td>4</td><td><span class="st done">Approved</span></td></tr>
+            <tr><td>Carla M.</td><td>Emergency</td><td>May 20</td><td>1</td><td>2</td><td><span class="st prog">Pending</span></td></tr>
+            <tr><td>Dan P.</td><td>Vacation</td><td>May 27–31</td><td>5</td><td>0</td><td><span class="st late">No balance</span></td></tr></table></div></div>
+          <div class="txt"><h3>Leave Tracker <span class="tag-sample">Sample</span></h3><p>Requests, balances and approvals in one sheet, so schedules are planned around them.</p><div class="used"><span>Google Sheets</span><span>Forms</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Excel · Payroll · Mar 1–15</span></div>
+          <div class="scroll-x"><table class="t"><tr><th>Employee</th><th>Days</th><th>OT hrs</th><th>Gross</th><th>Deductions</th><th>Net</th></tr>
+            <tr><td>Ana R.</td><td>13</td><td>4</td><td>₱8,708</td><td>₱612</td><td>₱8,096</td></tr>
+            <tr><td>Ben T.</td><td>12</td><td>6</td><td>₱8,224</td><td>₱598</td><td>₱7,626</td></tr>
+            <tr><td>Carla M.</td><td>13</td><td>0</td><td>₱8,385</td><td>₱604</td><td>₱7,781</td></tr>
+            <tr><td><b>Total</b></td><td></td><td></td><td><b>₱25,317</b></td><td><b>₱1,814</b></td><td><b>₱23,503</b></td></tr></table></div></div>
+          <div class="txt"><h3>Payroll Processing <span class="tag-sample">Sample</span></h3><p>Formula-driven payroll that pulls days and overtime from attendance, ready for approval.</p><div class="used"><span>Excel</span><span>QuickBooks</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Performance review · Q2</span><em>Ana R.</em></div>
+          <div class="mb" style="display:flex;flex-direction:column;gap:2px">
+            <div class="skill"><span>Attendance</span><span class="meter"><i style="width:95%"></i></span><b>4.8</b></div>
+            <div class="skill"><span>Customer service</span><span class="meter"><i style="width:90%"></i></span><b>4.5</b></div>
+            <div class="skill"><span>Teamwork</span><span class="meter"><i style="width:84%"></i></span><b>4.2</b></div>
+            <div class="skill"><span>Inventory accuracy</span><span class="meter"><i style="width:70%"></i></span><b>3.5</b></div>
+            <p class="mut" style="padding:6px 12px 0;font-size:11px">Goal for Q3: train as shift lead · cut stock count errors in half.</p></div></div>
+          <div class="txt"><h3>Performance Review <span class="tag-sample">Sample</span></h3><p>Quarterly reviews with scores, clear goals and a growth path for each employee.</p><div class="used"><span>Google Forms</span><span>Sheets</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Employee handbook · v2</span></div>
+          <div class="doc"><h5>Contents</h5>
+            <div class="row"><b>1</b><span>Welcome, mission and store values</span></div>
+            <div class="row"><b>2</b><span>Work hours, breaks and overtime</span></div>
+            <div class="row"><b>3</b><span>Leave policy and how to file</span></div>
+            <div class="row"><b>4</b><span>Pay days, benefits and deductions</span></div>
+            <div class="row"><b>5</b><span>Code of conduct and discipline</span></div></div></div>
+          <div class="txt"><h3>Policies &amp; Handbook <span class="tag-sample">Sample</span></h3><p>Plain-language policies so every employee knows the rules from day one.</p><div class="used"><span>Google Docs</span><span>Word</span></div></div></article>
+      </div>
+    </div>
+
+    <!-- OPERATIONS -->
+    <div role="tabpanel" id="p-op" aria-labelledby="t-op" hidden>
+      <p class="niche-intro">Stock, suppliers, purchasing and truck dispatch kept under control, based on running retail operations and coordinating deliveries for a trucking and construction company.</p>
+      <div class="grid">
+        <article class="work wide"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Google Sheets · Dispatch board</span><em>Tue, Mar 10</em></div>
+          <div class="kpis"><div class="kpi"><span class="mut">Trucks out</span><b>9 / 12</b></div><div class="kpi"><span class="mut">Deliveries today</span><b>14</b></div><div class="kpi"><span class="mut">On time</span><b>13</b><span class="up">93%</span></div><div class="kpi"><span class="mut">Delayed</span><b style="color:#B4262B">1</b></div></div>
+          <div class="scroll-x"><table class="t"><tr><th>Trip</th><th>Truck</th><th>Driver</th><th>Load</th><th>From → To</th><th>Depart</th><th>ETA</th><th>Status</th></tr>
+            <tr><td>DSP-0310-01</td><td>10W · NBC 4521</td><td>R. Mendoza</td><td>Gravel 20 m³</td><td>Quarry, Rizal → Site A, Taguig</td><td>5:30 AM</td><td>8:00 AM</td><td><span class="st done">Delivered</span></td></tr>
+            <tr><td>DSP-0310-02</td><td>6W · NDF 8830</td><td>J. Aquino</td><td>Cement 300 bags</td><td>Warehouse, Pasay → Site B, Makati</td><td>7:00 AM</td><td>8:45 AM</td><td><span class="st done">Delivered</span></td></tr>
+            <tr><td>DSP-0310-03</td><td>Dump · NAX 1187</td><td>E. Santos</td><td>Backfill 15 m³</td><td>Site A, Taguig → Disposal, Bulacan</td><td>9:30 AM</td><td>12:30 PM</td><td><span class="st prog">In transit</span></td></tr>
+            <tr><td>DSP-0310-04</td><td>10W · NBC 4590</td><td>M. Ocampo</td><td>Steel bars 8 t</td><td>Supplier, Valenzuela → Site C, QC</td><td>10:00 AM</td><td>1:15 PM</td><td><span class="st late">Delayed · traffic</span></td></tr>
+            <tr><td>DSP-0310-05</td><td>6W · NDF 8812</td><td>L. Garcia</td><td>Hollow blocks 1,200</td><td>Plant, Cavite → Site B, Makati</td><td>1:00 PM</td><td>3:30 PM</td><td><span class="st todo">Scheduled</span></td></tr></table></div>
+          <div class="mb mut" style="font-size:11px;border-top:1px solid var(--m-line)">Client updated by SMS at departure and 30 minutes before arrival · Delays flagged to the site engineer right away.</div></div>
+          <div class="txt"><h3>Truck Dispatch Coordination <span class="tag-sample">Sample</span></h3><p>Every trip has a truck, driver, load, route and ETA. Clients and site teams get updates before they need to ask, and delays are flagged early.</p><div class="used"><span>Google Sheets</span><span>Viber / SMS</span><span>Google Maps</span></div></div></article>
+
+        <article class="work wide"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Google Sheets · Inventory dashboard</span><em>Updated today 8:00 AM</em></div>
+          <div class="kpis"><div class="kpi"><span class="mut">Total SKUs</span><b>412</b></div><div class="kpi"><span class="mut">Stock value</span><b>₱1.28M</b></div><div class="kpi"><span class="mut">Low stock</span><b style="color:#B4262B">7 items</b></div><div class="kpi"><span class="mut">Shrinkage</span><b>0.6%</b><span class="up">▼ from 2.1%</span></div></div>
+          <div class="scroll-x"><table class="t"><tr><th>SKU</th><th>Item</th><th>Category</th><th>On hand</th><th>Reorder at</th><th>Level</th><th>Status</th></tr>
+            <tr><td>BV-1021</td><td>Bottled water 500ml</td><td>Beverages</td><td>36</td><td>120</td><td style="width:120px"><span class="meter"><i style="width:30%;background:var(--c-red)"></i></span></td><td><span class="st late">Reorder</span></td></tr>
+            <tr><td>SN-2210</td><td>Potato chips 60g</td><td>Snacks</td><td>210</td><td>80</td><td><span class="meter"><i style="width:88%"></i></span></td><td><span class="st done">OK</span></td></tr>
+            <tr><td>HH-0315</td><td>Dishwashing liquid</td><td>Household</td><td>44</td><td>40</td><td><span class="meter"><i style="width:52%;background:var(--c-amber)"></i></span></td><td><span class="st prog">Watch</span></td></tr>
+            <tr><td>PC-0442</td><td>Shampoo sachet</td><td>Personal care</td><td>580</td><td>200</td><td><span class="meter"><i style="width:96%"></i></span></td><td><span class="st done">OK</span></td></tr>
+            <tr><td>DY-0118</td><td>Fresh milk 1L</td><td>Dairy</td><td>12</td><td>30</td><td><span class="meter"><i style="width:22%;background:var(--c-red)"></i></span></td><td><span class="st late">Reorder</span></td></tr></table></div></div>
+          <div class="txt"><h3>Inventory Control <span class="tag-sample">Sample</span></h3><p>Every item has a reorder point, so low stock turns red before it runs out. Weekly counts cut shrinkage from 2.1% to 0.6%.</p><div class="used"><span>Google Sheets</span><span>Excel</span><span>Conditional formatting</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Stock count · Weekly</span><em>Aisle 3</em></div>
+          <div class="scroll-x"><table class="t"><tr><th>Item</th><th>System</th><th>Counted</th><th>Variance</th></tr>
+            <tr><td>Instant noodles</td><td>240</td><td>238</td><td style="color:#B4262B">−2</td></tr>
+            <tr><td>Canned tuna</td><td>96</td><td>96</td><td style="color:#1E7A4E">0</td></tr>
+            <tr><td>Coffee 3-in-1</td><td>310</td><td>305</td><td style="color:#B4262B">−5</td></tr>
+            <tr><td>Sardines</td><td>150</td><td>150</td><td style="color:#1E7A4E">0</td></tr></table></div>
+          <div class="mb mut" style="font-size:11px">Variances over 1% are investigated the same day.</div></div>
+          <div class="txt"><h3>Stock Count &amp; Variance <span class="tag-sample">Sample</span></h3><p>System versus actual counts, so missing stock is caught early.</p><div class="used"><span>Google Sheets</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Purchase order · PO-2026-118</span><em><span class="st prog">For approval</span></em></div>
+          <div class="doc"><div class="row"><b>Supplier</b><span>Metro Beverage Distributors</span></div>
+            <div class="row"><b>Items</b><span>Bottled water 500ml × 20 cases · Fresh milk 1L × 6 cases</span></div>
+            <div class="row"><b>Total</b><span>₱18,640.00 · terms 30 days</span></div>
+            <div class="row"><b>Delivery</b><span>Thu, May 15 · 7:00–9:00 AM</span></div></div></div>
+          <div class="txt"><h3>Purchase Orders <span class="tag-sample">Sample</span></h3><p>Reorders turned into clean POs, approved, sent and tracked until delivery.</p><div class="used"><span>QuickBooks</span><span>Excel</span></div></div></article>
+
+        <article class="work wide"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Vendor dashboard</span><em>18 active vendors</em></div>
+          <div class="kpis"><div class="kpi"><span class="mut">On-time delivery</span><b>94%</b><span class="up">▲ 6 pts</span></div><div class="kpi"><span class="mut">Open POs</span><b>5</b></div><div class="kpi"><span class="mut">Payables due</span><b>₱72.4K</b></div><div class="kpi"><span class="mut">Savings this year</span><b>₱41K</b><span class="up">from renegotiation</span></div></div>
+          <div class="scroll-x"><table class="t"><tr><th>Vendor</th><th>Category</th><th>Contact</th><th>Terms</th><th>On-time</th><th>Rating</th><th>Status</th></tr>
+            <tr><td>Metro Beverage Distributors</td><td>Beverages</td><td>R. Garcia · 0917 555 0142</td><td>30 days</td><td>98%</td><td>★★★★★</td><td><span class="st done">Preferred</span></td></tr>
+            <tr><td>Golden Grains Trading</td><td>Rice &amp; dry goods</td><td>L. Tan · 0918 555 0177</td><td>15 days</td><td>95%</td><td>★★★★☆</td><td><span class="st done">Active</span></td></tr>
+            <tr><td>CleanPro Supplies</td><td>Household</td><td>M. Reyes · 0920 555 0109</td><td>COD</td><td>88%</td><td>★★★☆☆</td><td><span class="st prog">Review</span></td></tr>
+            <tr><td>FreshFarm Dairy</td><td>Dairy</td><td>J. Lopez · 0915 555 0123</td><td>7 days</td><td>91%</td><td>★★★★☆</td><td><span class="st done">Active</span></td></tr>
+            <tr><td>PrintHub PH</td><td>Signage</td><td>A. Cruz · 0927 555 0190</td><td>50% DP</td><td>—</td><td>New</td><td><span class="st todo">Onboarding</span></td></tr></table></div></div>
+          <div class="txt"><h3>Vendor Dashboard &amp; Directory <span class="tag-sample">Sample</span></h3><p>All suppliers in one list with contacts, payment terms and delivery scores, used to renegotiate prices and drop unreliable vendors.</p><div class="used"><span>Google Sheets</span><span>Notion</span><span>QuickBooks</span></div></div></article>
+      </div>
+    </div>
+
+    <!-- EVENT ORGANIZER -->
+    <div role="tabpanel" id="p-ev" aria-labelledby="t-ev" hidden>
+      <p class="niche-intro">Corporate events, parties and celebrations planned down to the minute, on budget and stress-free.</p>
+      <div class="grid">
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Run of show · Company anniversary</span><em>Sat, Jun 14</em></div>
+          <div class="scroll-x"><table class="t"><tr><th>Time</th><th>Segment</th><th>Owner</th><th></th></tr>
+            <tr><td>4:00 PM</td><td>Suppliers ingress &amp; sound check</td><td>Glyzel</td><td><span class="st done">Ready</span></td></tr>
+            <tr><td>5:30 PM</td><td>Registration &amp; photo wall</td><td>Usher team</td><td><span class="st done">Ready</span></td></tr>
+            <tr><td>6:30 PM</td><td>Welcome remarks · CEO</td><td>Host</td><td><span class="st prog">Script</span></td></tr>
+            <tr><td>7:00 PM</td><td>Dinner &amp; band</td><td>Caterer</td><td><span class="st done">Ready</span></td></tr>
+            <tr><td>8:30 PM</td><td>Awards &amp; raffle</td><td>HR</td><td><span class="st prog">Prizes</span></td></tr></table></div></div>
+          <div class="txt"><h3>Run of Show <span class="tag-sample">Sample</span></h3><p>A minute-by-minute program with an owner for every segment, shared with all suppliers.</p><div class="used"><span>Google Sheets</span><span>Notion</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Event budget · ₱350,000</span><em>₱12K under</em></div>
+          <div class="mb" style="display:flex;flex-direction:column;gap:2px">
+            <div class="skill"><span>Venue</span><span class="meter"><i style="width:100%;background:var(--c-blue)"></i></span><b>₱120K</b></div>
+            <div class="skill"><span>Catering</span><span class="meter"><i style="width:88%;background:var(--c-blue)"></i></span><b>₱105K</b></div>
+            <div class="skill"><span>Lights &amp; sound</span><span class="meter"><i style="width:40%;background:var(--c-blue)"></i></span><b>₱48K</b></div>
+            <div class="skill"><span>Decor</span><span class="meter"><i style="width:30%;background:var(--c-blue)"></i></span><b>₱36K</b></div>
+            <div class="skill"><span>Prizes &amp; giveaways</span><span class="meter"><i style="width:24%"></i></span><b>₱29K</b></div></div></div>
+          <div class="txt"><h3>Budget Tracker <span class="tag-sample">Sample</span></h3><p>Every peso planned and tracked against quotes, so the event lands on or under budget.</p><div class="used"><span>Excel</span><span>QuickBooks</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Guest list &amp; RSVP</span><em>150 invited</em></div>
+          <div class="kpis"><div class="kpi"><span class="mut">Attending</span><b>118</b></div><div class="kpi"><span class="mut">Maybe</span><b>12</b></div><div class="kpi"><span class="mut">Declined</span><b>20</b></div><div class="kpi"><span class="mut">Dietary notes</span><b>9</b></div></div>
+          <div class="scroll-x"><table class="t"><tr><th>Guest</th><th>Table</th><th>Meal</th><th>RSVP</th></tr>
+            <tr><td>Mr. &amp; Mrs. Tan</td><td>1</td><td>Beef</td><td><span class="st done">Yes</span></td></tr>
+            <tr><td>J. Villanueva</td><td>4</td><td>Vegetarian</td><td><span class="st done">Yes</span></td></tr>
+            <tr><td>K. Ramos +1</td><td>7</td><td>Fish</td><td><span class="st prog">Maybe</span></td></tr></table></div></div>
+          <div class="txt"><h3>Guest List &amp; RSVP <span class="tag-sample">Sample</span></h3><p>Invites, reminders and meal choices tracked live, so catering counts are always right.</p><div class="used"><span>Google Forms</span><span>Sheets</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Seating plan · Grand Ballroom</span></div>
+          <div class="seats"><div class="stage-bar">STAGE</div>
+            <div class="seat vip">1</div><div class="seat vip">2</div><div class="seat vip">3</div><div class="seat fam">4</div><div class="seat fam">5</div>
+            <div class="seat">6</div><div class="seat">7</div><div class="seat">8</div><div class="seat">9</div><div class="seat">10</div>
+            <div class="seat">11</div><div class="seat">12</div><div class="seat">13</div><div class="seat">14</div><div class="seat">15</div></div>
+          <div class="mb mut" style="font-size:11px">Gold: VIP & executives · Pink: awardees & families · 8 seats per table</div></div>
+          <div class="txt"><h3>Seating Plan <span class="tag-sample">Sample</span></h3><p>Tables arranged by guest group, with VIPs near the stage and a clear printed map for ushers.</p><div class="used"><span>Canva</span><span>Sheets</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Supplier tracker</span></div>
+          <div class="scroll-x"><table class="t"><tr><th>Supplier</th><th>Service</th><th>Contract</th><th>Payment</th></tr>
+            <tr><td>Casa Ilaw</td><td>Venue</td><td><span class="st done">Signed</span></td><td>50% paid</td></tr>
+            <tr><td>Hapag Catering</td><td>Food, 120 pax</td><td><span class="st done">Signed</span></td><td>Deposit paid</td></tr>
+            <tr><td>Soundwave PH</td><td>Lights &amp; band</td><td><span class="st prog">For review</span></td><td>—</td></tr>
+            <tr><td>Bloom &amp; Co.</td><td>Florals</td><td><span class="st todo">Quoting</span></td><td>—</td></tr></table></div></div>
+          <div class="txt"><h3>Supplier Coordination <span class="tag-sample">Sample</span></h3><p>Quotes, contracts and payments for every supplier in one place, with reminders before each due date.</p><div class="used"><span>Google Sheets</span><span>Gmail</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Event checklist</span><em>3 weeks to go</em></div>
+          <div class="check"><span class="meter"><i style="width:72%"></i></span>
+            <div><span class="box on"></span><span class="done-t">8 wks · Book venue and caterer</span></div>
+            <div><span class="box on"></span><span class="done-t">6 wks · Send invitations</span></div>
+            <div><span class="box on"></span><span class="done-t">4 wks · Finalize program and host</span></div>
+            <div><span class="box"></span><span>2 wks · Confirm headcount</span></div>
+            <div><span class="box"></span><span>1 day · Ingress and rehearsal</span></div></div></div>
+          <div class="txt"><h3>Planning Timeline <span class="tag-sample">Sample</span></h3><p>A week-by-week plan, so nothing is left for the last minute.</p><div class="used"><span>ClickUp</span><span>Notion</span></div></div></article>
+      </div>
+    </div>
+
+    <!-- CUSTOMER SUPPORT -->
+    <div role="tabpanel" id="p-cs" aria-labelledby="t-cs" hidden>
+      <p class="niche-intro">Friendly, fast replies by email, chat and social media, backed by technical support experience.</p>
+      <div class="grid">
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Help desk · Ticket #4821</span><em><span class="st done">Solved</span></em></div>
+          <div class="chat"><div class="msg"><small>Customer · 9:02 AM</small>I was charged twice for order #10293. Can you help?</div>
+            <div class="msg me"><small>Glyzel · 9:06 AM</small>So sorry about that! I've refunded the duplicate ₱1,250. It will show in 3–5 banking days.</div>
+            <div class="msg"><small>Customer · 9:08 AM</small>That was quick, thank you!</div>
+            <div class="mut" style="font-size:11px">Rating: ★★★★★ · First reply in 4 min</div></div></div>
+          <div class="txt"><h3>Ticket Handling <span class="tag-sample">Sample</span></h3><p>Acknowledge, fix and confirm in one thread, aiming to solve on first contact.</p><div class="used"><span>Email</span><span>Live chat</span><span>Messenger</span></div></div></article>
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Saved replies &amp; FAQ</span></div>
+          <div class="doc"><div class="row"><b>Shipping</b><span>"Orders ship within 24 hours. Here's your tracking link."</span></div>
+            <div class="row"><b>Refunds</b><span>"Refunds are processed within 2 business days of receiving the item."</span></div>
+            <div class="row"><b>Password</b><span>"Tap Forgot password on the login screen, then check your inbox."</span></div>
+            <div class="row"><b>Escalate</b><span>Billing errors over ₱5,000 go to the finance lead within 1 hour</span></div></div></div>
+          <div class="txt"><h3>FAQ &amp; Saved Replies <span class="tag-sample">Sample</span></h3><p>A shared reply library and escalation rules, so every question gets a consistent answer.</p><div class="used"><span>Google Docs</span><span>Notion</span></div></div></article>
+      </div>
+    </div>
+
+    <!-- ADMIN -->
+    <div role="tabpanel" id="p-ad" aria-labelledby="t-ad" hidden>
+      <p class="niche-intro">Accurate data entry, clean books and reports people actually read.</p>
+      <div class="grid">
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>QuickBooks · Invoices</span><em>May</em></div>
+          <div class="kpis"><div class="kpi"><span class="mut">Paid</span><b>₱184K</b></div><div class="kpi"><span class="mut">Open</span><b>₱62K</b></div><div class="kpi"><span class="mut">Overdue</span><b>₱9.5K</b></div><div class="kpi"><span class="mut">Avg. days</span><b>12</b></div></div>
+          <div class="scroll-x"><table class="t"><tr><th>Invoice</th><th>Customer</th><th>Amount</th><th>Due</th><th>Status</th></tr>
+            <tr><td>#1043</td><td>Lumen Foods</td><td>₱48,000</td><td>May 10</td><td><span class="st done">Paid</span></td></tr>
+            <tr><td>#1044</td><td>Northpeak Co.</td><td>₱36,500</td><td>May 20</td><td><span class="st todo">Open</span></td></tr>
+            <tr><td>#1045</td><td>Casa Ilaw</td><td>₱9,500</td><td>May 2</td><td><span class="st late">Overdue</span></td></tr></table></div></div>
+          <div class="txt"><h3>Bookkeeping &amp; Invoicing <span class="tag-sample">Sample</span></h3><p>Invoices sent on time, payments matched and polite reminders for anything overdue.</p><div class="used"><span>QuickBooks</span><span>Excel</span></div></div></article>
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Expenses · March</span><em>₱84,300</em></div>
+          <div class="mb" style="display:flex;flex-direction:column;gap:2px">
+            <div class="skill"><span>Supplies</span><span class="meter"><i style="width:100%;background:var(--c-blue)"></i></span><b>₱32K</b></div>
+            <div class="skill"><span>Utilities</span><span class="meter"><i style="width:56%;background:var(--c-blue)"></i></span><b>₱18K</b></div>
+            <div class="skill"><span>Transport</span><span class="meter"><i style="width:44%;background:var(--c-blue)"></i></span><b>₱14K</b></div>
+            <div class="skill"><span>Misc.</span><span class="meter"><i style="width:35%"></i></span><b>₱11K</b></div>
+            <p class="mut" style="padding:6px 12px 0;font-size:11px">Misc. is 40% over budget. Flagged for review.</p></div></div>
+          <div class="txt"><h3>Expense Tracking <span class="tag-sample">Sample</span></h3><p>Receipts logged by category with a monthly summary that flags anything over budget.</p><div class="used"><span>Google Sheets</span><span>QuickBooks</span></div></div></article>
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Data clean-up · Customer list</span></div>
+          <div class="cmp"><div><h6>Before</h6><div class="mut">juan dela cruz | 0917 123 4567<br>JUAN DELA CRUZ | +639171234567<br>maria  santos | 9181112222</div></div>
+            <div><h6>After</h6><div>Juan Dela Cruz | +63 917 123 4567<br>Maria Santos | +63 918 111 2222<br><span class="mut">1 duplicate merged</span></div></div></div></div>
+          <div class="txt"><h3>Data Entry &amp; Clean-up <span class="tag-sample">Sample</span></h3><p>Standardized names and numbers and merged duplicates across 3,000 records.</p><div class="used"><span>Excel</span><span>Sheets</span></div></div></article>
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>SOP · Processing a supplier invoice</span></div>
+          <div class="doc"><div class="row"><b>Step 1</b><span>Save the invoice to 03 Finance / Invoices / YYYY-MM.</span></div>
+            <div class="row"><b>Step 2</b><span>Match it with the purchase order and delivery receipt.</span></div>
+            <div class="row"><b>Step 3</b><span>Enter the bill in QuickBooks with its due date.</span></div>
+            <div class="row"><b>Step 4</b><span>Send to the manager for approval by Thursday 5 PM.</span></div></div></div>
+          <div class="txt"><h3>SOPs &amp; Reports <span class="tag-sample">Sample</span></h3><p>Step-by-step guides so work continues smoothly even when someone is away.</p><div class="used"><span>Google Docs</span><span>Notion</span></div></div></article>
+      </div>
+    </div>
+
+    <!-- MEDICAL -->
+    <div role="tabpanel" id="p-md" aria-labelledby="t-md" hidden>
+      <p class="niche-intro">Accurate, private and organized patient and insurance records, based on work as a laboratory medical data analyst. All names and IDs below are made up.</p>
+      <div class="grid">
+        <article class="work wide"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Excel · Patient records register</span><em>Access: restricted</em></div>
+          <div class="scroll-x"><table class="t"><tr><th>Patient ID</th><th>Name</th><th>Age/Sex</th><th>Test</th><th>Requested by</th><th>Date</th><th>Payer</th><th>Result</th></tr>
+            <tr><td>LAB-26-00481</td><td>Dela Rosa, M.</td><td>45/F</td><td>CBC, FBS</td><td>Dr. Aquino</td><td>2026-03-02</td><td>HMO</td><td><span class="st done">Released</span></td></tr>
+            <tr><td>LAB-26-00482</td><td>Santos, J.</td><td>62/M</td><td>Lipid profile</td><td>Dr. Lim</td><td>2026-03-02</td><td>Cash</td><td><span class="st done">Released</span></td></tr>
+            <tr><td>LAB-26-00483</td><td>Villanueva, K.</td><td>29/F</td><td>Urinalysis</td><td>Walk-in</td><td>2026-03-03</td><td>HMO</td><td><span class="st prog">Processing</span></td></tr>
+            <tr><td>LAB-26-00484</td><td>Ramos, P.</td><td>38/M</td><td>HbA1c</td><td>Dr. Aquino</td><td>2026-03-03</td><td>Company</td><td><span class="st late">Re-test</span></td></tr>
+            <tr><td>LAB-26-00485</td><td>Cruz, A.</td><td>8/F</td><td>CBC</td><td>Dr. Reyes</td><td>2026-03-03</td><td>PhilHealth</td><td><span class="st todo">Encoded</span></td></tr></table></div></div>
+          <div class="txt"><h3>Patient Records Register <span class="tag-sample">Sample</span></h3><p>One row per test with a unique ID, requesting doctor, payer and status, so any result can be found and released in seconds.</p><div class="used"><span>Excel</span><span>Data privacy</span><span>Data validation</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Google Drive · Insurance &amp; HMO</span></div>
+          <div class="tree">
+            <div><svg viewBox="0 0 24 24" fill="#3B6EF5"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><b>05 Insurance &amp; HMO</b></div>
+            <div style="padding-left:20px"><svg viewBox="0 0 24 24" fill="#3B6EF5"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>CareFirst HMO</div>
+            <div style="padding-left:40px"><svg viewBox="0 0 24 24" fill="#7C5CFF"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>2026-03 Claims</div>
+            <div style="padding-left:60px" class="mut"><svg viewBox="0 0 24 24" fill="#E5484D"><path d="M6 2h8l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/></svg>LAB-26-00481_CareFirst_LOA.pdf</div>
+            <div style="padding-left:60px" class="mut"><svg viewBox="0 0 24 24" fill="#E5484D"><path d="M6 2h8l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/></svg>LAB-26-00481_CareFirst_Claim.pdf</div>
+            <div style="padding-left:40px"><svg viewBox="0 0 24 24" fill="#7C5CFF"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Accreditation &amp; contracts</div>
+            <div style="padding-left:20px"><svg viewBox="0 0 24 24" fill="#3B6EF5"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>MediShield Insurance</div>
+            <div style="padding-left:20px"><svg viewBox="0 0 24 24" fill="#3B6EF5"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>PhilHealth</div>
+            <div style="padding-left:20px"><svg viewBox="0 0 24 24" fill="#2F9E6A"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Company accounts</div>
+            <div style="padding-left:20px"><svg viewBox="0 0 24 24" fill="#D99A00"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>00 Templates &amp; naming guide</div></div></div>
+          <div class="txt"><h3>Insurance Files in Drive <span class="tag-sample">Sample</span></h3><p>Each insurer has its own folder, sorted by month, and every file follows the same name: patient ID_insurer_document.</p><div class="used"><span>Google Drive</span><span>Sharing permissions</span></div></div></article>
+
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>HMO claims tracker · March</span></div>
+          <div class="kpis"><div class="kpi"><span class="mut">Submitted</span><b>146</b></div><div class="kpi"><span class="mut">Paid</span><b>121</b></div><div class="kpi"><span class="mut">Pending</span><b>19</b></div><div class="kpi"><span class="mut">Denied</span><b>6</b></div></div>
+          <div class="scroll-x"><table class="t"><tr><th>Claim</th><th>Insurer</th><th>Amount</th><th>Status</th></tr>
+            <tr><td>CF-30121</td><td>CareFirst</td><td>₱2,350</td><td><span class="st done">Paid</span></td></tr>
+            <tr><td>MS-88410</td><td>MediShield</td><td>₱4,800</td><td><span class="st prog">Pending</span></td></tr>
+            <tr><td>CF-30188</td><td>CareFirst</td><td>₱1,150</td><td><span class="st late">Denied · resubmit</span></td></tr></table></div></div>
+          <div class="txt"><h3>Claims Tracking <span class="tag-sample">Sample</span></h3><p>Every claim followed from submission to payment, with denied ones fixed and resubmitted quickly.</p><div class="used"><span>Google Sheets</span><span>Excel</span></div></div></article>
+      </div>
+    </div>
+
+    <!-- TEACHING -->
+    <div role="tabpanel" id="p-te" aria-labelledby="t-te" hidden>
+      <p class="niche-intro">Tutoring since 2015: patient, structured lessons for kids and adults, online or one-on-one.</p>
+      <div class="grid">
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Lesson plan · English · Grade 5</span><em>45 min</em></div>
+          <div class="doc"><h5>Using past tense verbs</h5><p class="mut">Objective: write 5 sentences about the weekend using past tense.</p>
+            <div class="row"><b>5 min</b><span>Warm-up: "What did you do yesterday?" game</span></div>
+            <div class="row"><b>15 min</b><span>Mini lesson: regular vs irregular verbs</span></div>
+            <div class="row"><b>15 min</b><span>Practice: worksheet and pair checking</span></div>
+            <div class="row"><b>10 min</b><span>Weekend journal and exit ticket</span></div></div></div>
+          <div class="txt"><h3>Lesson Plan <span class="tag-sample">Sample</span></h3><p>Clear objective, timed activities and a quick check that every student understood.</p><div class="used"><span>Google Docs</span><span>Canva</span></div></div></article>
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Worksheet · Past tense</span></div>
+          <div class="doc"><div class="row"><b>1</b><span>Yesterday I <u>&nbsp;walked&nbsp;</u> (walk) to school.</span></div>
+            <div class="row"><b>2</b><span>She <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> (eat) adobo for lunch.</span></div>
+            <div class="row"><b>3</b><span>We <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> (go) to the park on Sunday.</span></div></div></div>
+          <div class="txt"><h3>Worksheets <span class="tag-sample">Sample</span></h3><p>Printable and digital activities matched to each lesson.</p><div class="used"><span>Canva</span><span>Google Slides</span></div></div></article>
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Progress report · Mia, age 9</span></div>
+          <div class="mb" style="display:flex;flex-direction:column;gap:2px">
+            <div class="skill"><span>Reading</span><span class="meter"><i style="width:85%"></i></span><b>A−</b></div>
+            <div class="skill"><span>Writing</span><span class="meter"><i style="width:70%"></i></span><b>B</b></div>
+            <div class="skill"><span>Speaking</span><span class="meter"><i style="width:90%"></i></span><b>A</b></div>
+            <p class="mut" style="padding:6px 12px 0;font-size:11px">Next term: paragraph writing and verb tenses.</p></div></div>
+          <div class="txt"><h3>Progress Report <span class="tag-sample">Sample</span></h3><p>A simple update for parents: strengths, areas to work on and next steps.</p><div class="used"><span>Sheets</span><span>Docs</span></div></div></article>
+      </div>
+    </div>
+
+    <!-- PROOFREADING -->
+    <div role="tabpanel" id="p-pr" aria-labelledby="t-pr" hidden>
+      <p class="niche-intro">Clean, consistent writing for emails, blogs, reports and school papers.</p>
+      <div class="grid">
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Google Docs · Suggesting</span></div>
+          <div class="edit">Our team <del>have</del> <ins>has</ins> over ten years of experience <del>in</del> helping small <del>business</del> <ins>businesses</ins> grow <del>there</del> <ins>their</ins> online presence. <del>We offers</del> <ins>We offer</ins> social media, <del>website</del> <ins>web design</ins> and email marketing.
+            <span class="note">5 fixes: subject–verb agreement, plurals, there/their, parallel list.</span></div></div>
+          <div class="txt"><h3>Before &amp; After Edit <span class="tag-sample">Sample</span></h3><p>Every fix shown with tracked changes, so the writer sees what changed and why.</p><div class="used"><span>Google Docs</span><span>Word</span><span>Grammarly</span></div></div></article>
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Proofreading checklist</span></div>
+          <div class="check"><div><span class="box on"></span><span>Spelling and typos</span></div><div><span class="box on"></span><span>Grammar and punctuation</span></div><div><span class="box on"></span><span>Consistent tense and voice</span></div><div><span class="box on"></span><span>Headings and spacing</span></div><div><span class="box on"></span><span>Names, dates and figures checked</span></div></div></div>
+          <div class="txt"><h3>Final Quality Check <span class="tag-sample">Sample</span></h3><p>A last pass on format and facts before anything goes to a client.</p><div class="used"><span>Style guides</span></div></div></article>
+      </div>
+    </div>
+
+    <!-- TRANSCRIPTION -->
+    <div role="tabpanel" id="p-tr" aria-labelledby="t-tr" hidden>
+      <p class="niche-intro">Accurate transcripts of meetings, interviews, podcasts and videos, with timestamps and speaker labels.</p>
+      <div class="grid">
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Transcript · Podcast ep. 12</span><em>42:18</em></div>
+          <div class="tx"><div><time>00:00:04</time><span><b>Host:</b> Welcome back! Today I'm talking with Liza, who runs three milk tea stalls in Pasay.</span></div>
+            <div><time>00:00:15</time><span><b class="s2">Liza:</b> Thanks for having me! I almost closed the first stall in 2023.</span></div>
+            <div><time>00:00:22</time><span><b>Host:</b> What changed?</span></div>
+            <div><time>00:00:24</time><span><b class="s2">Liza:</b> We started posting short videos every day. Sales doubled in two months.</span></div></div></div>
+          <div class="txt"><h3>Timestamped Transcript <span class="tag-sample">Sample</span></h3><p>Speaker labels and timestamps so editors can jump straight to a quote.</p><div class="used"><span>Google Docs</span><span>Express Scribe</span></div></div></article>
+        <article class="work"><div class="mock"><div class="bar"><i></i><i></i><i></i><span>Verbatim vs clean verbatim</span></div>
+          <div class="cmp"><div><h6>Full verbatim</h6><span class="mut">"So, um, we— we basically, like, started posting every day, you know? And, uh, sales doubled."</span></div>
+            <div><h6>Clean verbatim</h6><span>"So we basically started posting every day, and sales doubled."</span></div></div></div>
+          <div class="txt"><h3>Verbatim Options <span class="tag-sample">Sample</span></h3><p>Full verbatim for research and legal work, clean verbatim for blogs and captions.</p><div class="used"><span>Transcription</span><span>Captions</span></div></div></article>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= CONTACT ================= -->
+<footer class="block contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <span class="eyebrow rv" style="color:var(--blush)">Contact me</span>
+        <h2 class="rv" style="--i:1;margin-top:12px">Let's make your week <em>easier.</em></h2>
+        <p class="lead rv" style="--i:2">Tell me what's taking up your time and pick a time for a free 15-minute call. I reply within 24 hours.</p>
+        <div class="mailrow rv" style="--i:3"><code id="email">yourvagly@gmail.com</code><button class="btn pink" id="copy" type="button">Copy email</button></div>
+        <div class="cphoto rv" style="--i:4"><img src="img/contact.webp" alt="Glyzel at her desk in a blue shirt" loading="lazy" width="800" height="1116"></div>
+      </div>
+
+      <form class="book rv" id="book" novalidate>
+        <h3>Book a free call</h3>
+        <label>Your name<input id="f-name" name="name" autocomplete="name" required></label>
+        <label>Email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
+        <label class="full">Company or brand<input id="f-company" name="company" autocomplete="organization" placeholder="e.g. Kapé Lokal Coffee"></label>
+        <div class="full"><label style="margin-bottom:8px">Services you need</label>
+          <div class="svc" id="f-services">
+            <label><input type="checkbox" value="Executive / Virtual Assistant"><span>Executive / Virtual Assistant</span></label>
+            <label><input type="checkbox" value="Social Media Management"><span>Social Media</span></label>
+            <label><input type="checkbox" value="Graphic Design"><span>Graphic Design</span></label>
+            <label><input type="checkbox" value="HR &amp; Recruitment"><span>HR &amp; Recruitment</span></label>
+            <label><input type="checkbox" value="Event Organizing"><span>Event Organizing</span></label>
+            <label><input type="checkbox" value="Customer Support"><span>Customer Support</span></label>
+            <label><input type="checkbox" value="Admin &amp; Bookkeeping"><span>Admin &amp; Bookkeeping</span></label>
+            <label><input type="checkbox" value="Tutoring"><span>Tutoring</span></label>
+            <label><input type="checkbox" value="Proofreading"><span>Proofreading</span></label>
+            <label><input type="checkbox" value="Transcription"><span>Transcription</span></label>
+          </div></div>
+        <label class="full">What do you need help with?<textarea id="f-problem" name="problem" required placeholder="e.g. My inbox and calendar are a mess and I'm missing client follow-ups."></textarea></label>
+        <label>Preferred call date<input id="f-date" name="date" type="date" required></label>
+        <label>Preferred time<select id="f-time" name="time" required>
+          <option value="">Choose a time</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option></select></label>
+        <label class="full">Your time zone<select id="f-tz" name="tz">
+          <option>Philippines (GMT+8)</option><option>Australia – Sydney (AEST)</option><option>Singapore / Hong Kong (GMT+8)</option><option>UK (GMT/BST)</option><option>US Eastern (ET)</option><option>US Central (CT)</option><option>US Pacific (PT)</option><option>Canada (ET/PT)</option><option>Middle East (GST)</option></select></label>
+        <p class="err" id="f-err" hidden></p>
+        <button class="btn submit" type="submit">Request my call</button>
+        <div class="done" id="f-done" hidden>
+          <b>Almost done! Send your request in one tap.</b>
+          <p style="font-size:14px;color:#5B6380">Your details are ready in an email to Glyzel. Open it in Gmail and press Send.</p>
+          <pre id="f-summary"></pre>
+          <div class="row"><a class="btn solid" id="f-gmail" href="#" target="_blank" rel="noopener">Open in Gmail</a><button class="btn" type="button" id="f-copy" style="border:1.5px solid #DCD5DF;background:#fff;color:#1B2541">Copy details</button></div>
+        </div>
+      </form>
+    </div>
+    <div class="foot"><span>© 2026 Glyzel Cabais · Pasay, Philippines</span><a href="#home" style="text-decoration:none">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb"><button type="button" id="lb-x">Close</button><img id="lb-img" alt=""><p id="lb-cap"></p></dialog>
+
+<script>
+(function(){
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+  const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v)), ease=t=>1-Math.pow(1-t,3);
+
+  /* ---------- hero scene ---------- */
+  const hero=$('#home'), n1=$('#n1'), n2=$('#n2'), portrait=$('#portrait'), role=$('#role'), intro=$('#intro'), glow=$('#glow'), chips=$$('.chip');
+  function scene(p){
+    const narrow=innerWidth<=860, a=ease(clamp(p/0.55)), b=ease(clamp((p-0.4)/0.36));
+    n1.style.transform=`translateX(${-a*45}vw)`; n2.style.transform=`translateX(${a*45}vw)`;
+    n1.style.opacity=n2.style.opacity=1-a*0.9;
+    portrait.style.transform=narrow?`translate(-50%,calc(-42% - ${a*24}vh)) scale(${1-a*0.42})`
+      :`translate(calc(-50% - ${a*24}vw),-42%) scale(${1-a*0.08}) rotate(${-a*2}deg)`;
+    chips.forEach(c=>{const d=narrow?320:640;c.style.transform=`translate(${c.dataset.dx*a*d}px,${c.dataset.dy*a*d}px) rotate(${c.dataset.r*a}deg) scale(${1-a*0.2})`;c.style.opacity=1-a;});
+    role.style.opacity=1-clamp(a*1.6);
+    intro.style.opacity=b; intro.style.transform=narrow?`translateY(${(1-b)*40}px)`:`translateY(calc(-50% + ${(1-b)*40}px))`;
+    intro.classList.toggle('live',b>0.5);
+    glow.style.setProperty('--gx',(50-a*26)+'%');
+  }
+  if(reduced){hero.classList.add('static');scene(1);}
+
+  /* rotating word */
+  const words=['inbox','calendar','socials','hiring','events','bookkeeping','emails'];
+  const slot=$('#slot'), sw=slot.firstElementChild; let wi=0;
+  const fit=()=>{slot.style.width=sw.offsetWidth+'px';};
+  fit(); addEventListener('resize',fit);
+  if(!reduced) setInterval(()=>{
+    if(document.hidden) return;
+    slot.classList.add('swap');
+    setTimeout(()=>{
+      wi=(wi+1)%words.length; sw.textContent=words[wi];
+      slot.classList.remove('swap'); slot.classList.add('enter'); fit();
+      void sw.offsetWidth; slot.classList.remove('enter');
+    },300);
+  },2000);
+
+
+  /* ---------- turn every sample into a device mockup ---------- */
+  const APPS=[
+    [/Gmail/i,'mail.google.com/mail/u/0/#inbox','Gmail','M','#EA4335'],
+    [/Calendar/i,'calendar.google.com/calendar/r/week','Calendar','31','#1A73E8'],
+    [/Excel|Payroll|Patient records/i,'excel.cloud.microsoft/workbook','Excel','X','#107C41','excel'],
+    [/ClickUp|onboarding|Event checklist/i,'app.clickup.com/9012/v/b','ClickUp','◆','#7B68EE','clickup'],
+    [/Trello|Applicant/i,'trello.com/b/hiring-board','Trello','▤','#0079BF','trello'],
+    [/Drive/i,'drive.google.com/drive/my-drive','Drive','▲','#F4B400'],
+    [/QuickBooks|Purchase order/i,'qbo.intuit.com/app/invoices','QuickBooks','qb','#2CA01C'],
+    [/Mailchimp/i,'us21.admin.mailchimp.com/campaigns','Mailchimp','✉','#FFE01B'],
+    [/Meta|Planner/i,'business.facebook.com/latest/planner','Meta Business Suite','∞','#0866FF'],
+    [/Instagram/i,'instagram.com/kapelokal.ph','Instagram','◎','#E1306C'],
+    [/Facebook/i,'facebook.com/kapelokal','Facebook','f','#0866FF'],
+    [/Help desk|Saved replies/i,'support.kapelokal.ph/tickets','Help Desk','?','#03363D'],
+    [/Notion|Content calendar|itinerary/i,'notion.so/workspace','Notion','N','#111111'],
+    [/Google Sheets|Sheets|Leave|Expenses|Stock count|Dispatch|Inventory|Vendor|Weekly report|Growth report|Event budget|Guest list|Supplier|Seating|HMO claims|Interview scorecard|Performance review|Data clean-up/i,'docs.google.com/spreadsheets/d/1x9Qa','Sheets','▦','#188038','sheets'],
+    [/Transcript|Verbatim|Docs|Suggesting|SOP|handbook|Lesson|Worksheet|Progress report|Proofreading|Templates|Captions|Run of show|Job post/i,'docs.google.com/document/d/1k7Pz','Docs','≡','#4285F4']
+  ];
+  const LOCK='<svg viewBox="0 0 24 24"><path d="M6 10V7a6 6 0 1 1 12 0v3h1v12H5V10zm2 0h8V7a4 4 0 1 0-8 0z" fill="#5F6368"/></svg>';
+  $$('.work').forEach(w=>{
+    const mock=w.querySelector('.mock'); if(!mock) return;
+    const bar=mock.querySelector(':scope > .bar');
+    const title=bar?bar.querySelector('span').textContent:'', extra=bar&&bar.querySelector('em')?bar.querySelector('em').innerHTML:'';
+    const isPhone=/^(Instagram|Facebook) ·/.test(title);
+    let url=mock.dataset.url, head='';
+    if(bar){
+      const a=APPS.find(x=>x[0].test(title))||[null,'app.workspace.com','App','•','#3B6EF5'];
+      url=a[1]; if(a[5]) mock.classList.add('app-'+a[5]);
+      const t=title.replace(/^(Gmail|Google Calendar|Google Sheets|Google Drive|Notion|ClickUp|Trello|Excel|QuickBooks|Mailchimp|Meta Business Suite|Instagram|Facebook)\s*·\s*/,'');
+      head=`<div class="apphd" style="--app:${a[4]}"><span class="ab" style="${a[4]==='#FFE01B'?'color:#241C15':''}">${a[3]}</span><span class="an">${a[2]}</span><span class="at">${t}</span>${extra?`<span class="ax">${extra}</span>`:''}</div>`;
+      bar.parentNode.removeChild(bar);
+    }
+    if(isPhone){
+      mock.insertAdjacentHTML('afterbegin',`<div class="notchpad"><span>9:41</span><span>●●● 5G ▮</span></div>`);
+      const ph=document.createElement('div'); ph.className='phone'; mock.replaceWith(ph); ph.appendChild(mock);
+    } else {
+      mock.insertAdjacentHTML('afterbegin',`<div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">${LOCK}${url||''}</span></div>`+head);
+      const lp=document.createElement('div'); lp.className='laptop'; lp.innerHTML='<div class="lid"></div><div class="base"></div>';
+      mock.replaceWith(lp); lp.firstChild.appendChild(mock);
+    }
+  });
+
+  /* split section headings into words that rise in */
+  $$('.head h2, .contact h2').forEach(h=>{
+    let i=0; const walk=n=>{ [...n.childNodes].forEach(c=>{ if(c.nodeType===3){ const frag=document.createDocumentFragment();
+      c.textContent.split(/(\s+)/).forEach(part=>{ if(!part) return; if(/^\s+$/.test(part)){frag.appendChild(document.createTextNode(part));return;}
+        const o=document.createElement('span'); o.className='wd'; const inn=document.createElement('span'); inn.textContent=part; inn.style.setProperty('--w',i++); o.appendChild(inn); frag.appendChild(o); });
+      c.replaceWith(frag);} else if(c.nodeType===1 && !c.classList.contains('wd')) walk(c); }); };
+    walk(h); h.classList.remove('rv'); h.parentElement.classList.remove('rv');
+  });
+
+  /* ---------- scroll-linked motion ---------- */
+  const top=$('#top'), bar=$('#progress'), tl=$('#tl'), par=$$('[data-speed]');
+  let ticking=false;
+  function onScroll(){
+    if(ticking) return; ticking=true;
+    requestAnimationFrame(()=>{
+      ticking=false;
+      const vh=innerHeight;
+      if(!reduced){const r=hero.getBoundingClientRect(); scene(clamp(-r.top/(r.height-vh)));}
+      top.classList.toggle('solid',scrollY>vh*0.5);
+      const max=document.documentElement.scrollHeight-vh; bar.style.transform=`scaleX(${max>0?scrollY/max:0})`;
+      const tr=tl.getBoundingClientRect(); tl.style.setProperty('--tp',clamp((vh*0.6-tr.top)/tr.height));
+      if(!reduced) par.forEach(el=>{const r=el.parentElement.getBoundingClientRect(); el.style.transform=`translateY(${(r.top+r.height/2-vh/2)*el.dataset.speed}px)`;});
+      reels.forEach(rl=>{ if(rl.visible) rl.scrollBoost=(scrollY-rl.lastY)*0.6; rl.lastY=scrollY; });
+    });
+  }
+  addEventListener('scroll',onScroll,{passive:true}); addEventListener('resize',onScroll);
+
+  /* ---------- reveals ---------- */
+  const blocks=$$('section.block, footer.block');
+  blocks.forEach(s=>{ if(s.getBoundingClientRect().top>innerHeight) s.classList.add('pending'); });
+  const counted=new WeakSet();
+  function countUp(root){ root.querySelectorAll('[data-count]').forEach(el=>{ if(counted.has(el)||reduced) return; counted.add(el);
+    const end=+el.dataset.count, t0=performance.now(); const step=t=>{const k=clamp((t-t0)/1400); el.textContent=Math.round(end*ease(k)); if(k<1) requestAnimationFrame(step);}; requestAnimationFrame(step); }); }
+  const hasIO='IntersectionObserver' in window;
+  if(hasIO){
+    const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.remove('pending'); countUp(e.target); io.unobserve(e.target);} }),{threshold:.06});
+    blocks.forEach(s=>io.observe(s));
+  } else blocks.forEach(s=>s.classList.remove('pending'));
+  const wio=hasIO?new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); wio.unobserve(e.target);} }),{threshold:.15}):null;
+  $$('[role=tabpanel]').forEach(p=>p.querySelectorAll('.work').forEach((w,k)=>w.style.transitionDelay=(k%2)*120+'ms'));
+  $$('.work').forEach(w=>{ if(wio&&!reduced) wio.observe(w); else w.classList.add('in'); });
+
+  /* card tilt */
+  if(matchMedia('(hover:hover)').matches&&!reduced) $$('.work').forEach(w=>{
+    w.addEventListener('pointermove',e=>{const r=w.getBoundingClientRect(); w.style.setProperty('--ry',((e.clientX-r.left)/r.width-.5)*6+'deg'); w.style.setProperty('--rx',(.5-(e.clientY-r.top)/r.height)*6+'deg');});
+    w.addEventListener('pointerleave',()=>{w.style.setProperty('--rx','0deg');w.style.setProperty('--ry','0deg');});
+  });
+
+  /* ---------- tabs ---------- */
+  const tabs=$$('[role=tab]');
+  function select(t,focus,user){
+    tabs.forEach(x=>{const on=x===t; x.setAttribute('aria-selected',on); x.tabIndex=on?0:-1; const p=document.getElementById(x.getAttribute('aria-controls')); p.hidden=!on; if(on&&user){p.classList.remove('panel-in'); void p.offsetWidth; p.classList.add('panel-in');
+      if(wio&&!reduced) p.querySelectorAll('.work').forEach(w=>{w.classList.remove('in'); wio.unobserve(w); requestAnimationFrame(()=>wio.observe(w));});}});
+    if(focus) t.focus();
+    const strip=t.parentElement; strip.scrollTo({left:t.offsetLeft-strip.offsetLeft-16,behavior:reduced?'auto':'smooth'});
+    if(user){ const pf=$('#portfolio .tabs'); const y=pf.getBoundingClientRect().top; if(y<0) scrollBy({top:y-80,behavior:reduced?'auto':'smooth'}); }
+  }
+  tabs.forEach((t,i)=>{ t.addEventListener('click',()=>select(t,false,true));
+    t.addEventListener('keydown',e=>{ if(e.key==='ArrowRight') select(tabs[(i+1)%tabs.length],true,true); if(e.key==='ArrowLeft') select(tabs[(i-1+tabs.length)%tabs.length],true,true); }); });
+  select(tabs[0]);
+
+  /* ---------- moving reels (auto-drift + scroll boost) ---------- */
+  const reels=$$('[data-reel]').map(el=>{
+    const track=el.querySelector('.track'); if(!track.children.length) return null;
+    track.innerHTML+=track.innerHTML; // loop
+    const rl={el,track,x:0,dir:+el.dataset.dir||-1,visible:false,scrollBoost:0,lastY:scrollY,hover:false};
+    el.addEventListener('pointerenter',()=>rl.hover=true); el.addEventListener('pointerleave',()=>rl.hover=false);
+    el.addEventListener('focusin',()=>rl.hover=true); el.addEventListener('focusout',()=>rl.hover=false);
+    if(hasIO) new IntersectionObserver(es=>es.forEach(e=>rl.visible=e.isIntersecting)).observe(el); else rl.visible=true;
+    return rl;
+  }).filter(Boolean);
+  let last=performance.now();
+  function loop(t){
+    const dt=Math.min(50,t-last); last=t;
+    reels.forEach(rl=>{
+      if(!rl.visible||reduced) return;
+      const half=rl.track.scrollWidth/2; if(!half) return;
+      const speed=rl.hover?0:0.04*dt;
+      rl.x+=rl.dir*(speed+Math.abs(rl.scrollBoost)*0.5); rl.scrollBoost*=0.9;
+      if(rl.x<=-half) rl.x+=half; if(rl.x>0) rl.x-=half;
+      rl.track.style.transform=`translateX(${rl.x}px)`;
+    });
+    requestAnimationFrame(loop);
+  }
+  reels.forEach(rl=>{ if(rl.dir>0) rl.x=-rl.track.scrollWidth/4; });
+  requestAnimationFrame(loop);
+  onScroll();
+
+  /* lightbox */
+  const lb=$('#lb'), lbi=$('#lb-img'), lbc=$('#lb-cap');
+  document.addEventListener('click',e=>{const b=e.target.closest('[data-full]'); if(!b) return; lbi.src=b.dataset.full; lbi.alt=b.getAttribute('aria-label')||''; lbc.textContent=b.getAttribute('aria-label')||''; if(lb.showModal) lb.showModal();});
+  $('#lb-x').addEventListener('click',()=>lb.close());
+  lb.addEventListener('click',e=>{ if(e.target===lb) lb.close(); });
+
+  /* copy email */
+  function copyText(txt,btn,label){ const ok=()=>{btn.textContent='Copied!';setTimeout(()=>btn.textContent=label,1800);};
+    try{navigator.clipboard.writeText(txt).then(ok,()=>btn.textContent='Select and copy manually');}catch(e){btn.textContent='Select and copy manually';} }
+  $('#copy').addEventListener('click',e=>copyText($('#email').textContent,e.currentTarget,'Copy email'));
+
+  /* booking form */
+  const form=$('#book'), err=$('#f-err'), done=$('#f-done');
+  const d=new Date(); d.setDate(d.getDate()+1); $('#f-date').min=d.toISOString().slice(0,10);
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    const v=id=>$(id).value.trim();
+    const services=$$('#f-services input:checked').map(i=>i.value);
+    const missing=[]; if(!v('#f-name')) missing.push('your name'); if(!/^\S+@\S+\.\S+$/.test(v('#f-email'))) missing.push('a valid email');
+    if(!services.length) missing.push('at least one service'); if(!v('#f-problem')) missing.push('what you need help with');
+    if(!v('#f-date')) missing.push('a call date'); if(!v('#f-time')) missing.push('a call time');
+    if(missing.length){ err.textContent='Please add '+missing.join(', ')+'.'; err.hidden=false; done.hidden=true; return; }
+    err.hidden=true;
+    const body=`Hi Glyzel,\n\nI'd like to book a free call.\n\nName: ${v('#f-name')}\nEmail: ${v('#f-email')}\nCompany: ${v('#f-company')||'-'}\nServices needed: ${services.join(', ')}\n\nWhat I need help with:\n${v('#f-problem')}\n\nPreferred call: ${v('#f-date')} at ${v('#f-time')} (${v('#f-tz')})\n`;
+    $('#f-summary').textContent=body;
+    $('#f-gmail').href='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent('yourvagly@gmail.com')+'&su='+encodeURIComponent('Discovery call request from '+v('#f-name'))+'&body='+encodeURIComponent(body);
+    done.hidden=false; done.scrollIntoView({block:'nearest',behavior:reduced?'auto':'smooth'});
+  });
+  $('#f-copy').addEventListener('click',e=>copyText($('#f-summary').textContent,e.currentTarget,'Copy details'));
+})();
+</script>
+
+</body>
+</html>
